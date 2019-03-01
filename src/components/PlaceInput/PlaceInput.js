@@ -18,6 +18,7 @@ class PlaceInput extends React.Component {
     const { placeNameInput } = this.state;
 
     if (placeNameInput.trim() === "") {
+      console.warn('Please, type something...')
       return;
     }
 

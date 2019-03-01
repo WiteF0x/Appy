@@ -3,10 +3,10 @@
     abi="x86"
     api-level="23"
     build-mode="FULL"
-    density="hdpi"
+    density="xhdpi"
     format="10"
     plugin-version="3.1.4"
-    timestamp="1551360349309"
+    timestamp="1551449590870"
     token="-7538214730239909420"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -23,9 +23,6 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="B:\RNApp\rn-app\android\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
     <artifact
         location="B:\RNApp\rn-app\android\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
@@ -59,14 +56,14 @@
     <artifact
         location="B:\RNApp\rn-app\android\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
+    <artifact
+        location="B:\RNApp\rn-app\android\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1551360349309"
+        timestamp="1551449590870"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="B:\RNApp\rn-app\android\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="B:\RNApp\rn-app\android\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
@@ -100,6 +97,9 @@
         <artifact
             location="B:\RNApp\rn-app\android\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
+        <artifact
+            location="B:\RNApp\rn-app\android\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

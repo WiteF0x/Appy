@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { View } from 'react-native';
-
 import {connect} from 'react-redux';
 
-import PlaceList from './src/components/PlaceList/PlaceList';
-import PlaceInput from './src/components/PlaceInput/PlaceInput';
-import styles from './style';
-import PlaceDetail from './src/components/PlaceDetail/PlaceDetail';
-import { addPlace, deletePlace, selectPlace, deselectPlace } from './src/store/actions/index';
+//components
+import PlaceList from '../../components/PlaceList/PlaceList';
+import PlaceInput from '../../components/PlaceInput/PlaceInput';
+import PlaceDetail from '../../components/PlaceDetail/PlaceDetail';
 
-class App extends React.Component {
+//actions
+import { 
+  addPlace,
+  deletePlace, 
+  selectPlace,
+  deselectPlace 
+} from '../../store/actions/index';
+
+import styles from './styles';
+
+
+class App extends Component {
+
+  static navigationOptions = {
+    header: null
+  }
+
   placeSubmitHandler = (placeName) => {
     this.props.onAddPlace(placeName);
   }
