@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "B:\\RNApp\\rn-app\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
+            "outputFile": "B:\\RNApp\\cooking-app\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mr\\values-mr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Professional\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\4245ea719f50ed741725996816ec680c\\res\\values-mr\\values-mr.xml",

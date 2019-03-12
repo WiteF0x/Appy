@@ -1,19 +1,81 @@
+import React from 'react';
+
 import { createStackNavigator } from 'react-navigation';
 import { createNavigationReducer, reduxifyNavigator } from 'react-navigation-redux-helpers';
 import { connect } from 'react-redux';
+import { createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 //screens
-import Login from '../screens/Login';
-import Home from '../screens/Home';
+import Login from '../screens/LoginScreen';
+import Recipes from '../screens/RecipesScreen';
+import AdminScreen from '../screens/AdminScreen';
+import Articles from '../screens/ArticleScreen';
+import CreateArticleScreen from '../screens/CreateArticle';
+import CreateRecipeScreen from '../screens/CreateRecipe';
+import CreateCategoryScreen from '../screens/CreateCategory';
+
+const AdminNavigation = createStackNavigator({
+    MainAdmin: {
+        screen: AdminScreen,
+    },
+    CreateArticle: {
+        screen: CreateArticleScreen,
+    },
+    CreateRecipe: {
+        screen: CreateRecipeScreen,
+    },
+    CreateCategory: {
+        screen: CreateCategoryScreen,
+    },
+}, {
+    initialRouteName: 'MainAdmin',
+    headerMode: 'none',
+});
+
+const mainNavigation = createMaterialBottomTabNavigator({
+    Recipes: {
+        screen: Recipes,
+        navigationOptions: {
+            tabBarLabel: 'Recipes',
+            tabBarIcon:({tintColor})=>(
+                <Icon name="ios-paper" color={tintColor} size={24}/>
+            )
+        }
+    },
+    Articles: {
+        screen: Articles,
+        navigationOptions: {
+            tabBarLabel: 'Articles',
+            tabBarIcon:({tintColor})=>(
+                <Icon name="ios-apps" color={tintColor} size={24} />
+            )
+        }
+    },
+    Admin: {
+        screen: AdminNavigation,
+        navigationOptions: {
+            tabBarLabel: 'Info Control',
+            tabBarIcon:({tintColor})=>(
+                <Icon name="ios-settings" color={tintColor} size={24}/>
+            )
+        }
+    },
+}, {
+    initialRouteName: 'Recipes',
+    order: ['Recipes', 'Articles', 'Admin'],
+    activeTintColor: 'orange',
+});
+
 
 
 const AppNavigator = createStackNavigator({
     Login: {
-        screen: Login
-    },
-    Home: {
-        screen: Home
-    },
+        screen: Login,
+        },
+    MainContent: {
+        screen: mainNavigation,
+    }
 }, {
     initialRouteName: 'Login',
     headerMode: 'none',
