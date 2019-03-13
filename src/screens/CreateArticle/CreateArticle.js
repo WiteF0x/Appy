@@ -9,6 +9,8 @@ import CategoryList from '../../components/CategoryList/CategoryList';
 import ArticleInput from '../../components/ArticleInput/ArticleInput';
 import CategoryDeleteModal from '../../components/CategoryDeleteModal/CategoryDeleteModal';
 
+import Header from '../../components/BackHeader/backHeader';
+
 import styles from './style';
 
 class CreateArticle extends Component {
@@ -33,11 +35,7 @@ class CreateArticle extends Component {
                         closeModal={this.closeModal}
                         idToDelete={this.state.idToDelete}
                     />
-                    <TouchableOpacity
-                        style={styles.back} 
-                        onPress={()=>this.props.goToAdmin()}>
-                        <Text>back</Text>
-                    </TouchableOpacity>
+                    <Header goBack={this.props.goToAdmin}/>
                     <Text style={styles.screenTitle}>Create Article</Text>
                     <ArticleInput />
                     <CategoryList 

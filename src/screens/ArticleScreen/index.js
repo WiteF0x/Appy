@@ -25,9 +25,16 @@ class ArticleScreen extends Component {
         this.props.onGetArticles();
     }
 
+    goToFull = (title,text,description) => this.props.navigation.navigate('FullArticle', {
+      title: title,
+      text: text,
+      description: description,
+    });
+
     render() {
         return(
-            <Article 
+            <Article
+              goToFull={this.goToFull} 
               articles={this.props.articles}
               categories={this.props.categories}
               onGetArticles={this.props.onGetArticles}

@@ -8,6 +8,7 @@ import {
 import CategoryList from '../../components/CategoryList/CategoryList';
 import RecipeInput from '../../components/RecipeInput/RecipeInput';
 import CategoryDeleteModal from '../../components/CategoryDeleteModal/CategoryDeleteModal';
+import Header from '../../components/BackHeader/backHeader';
 
 
 import styles from './style';
@@ -34,12 +35,7 @@ class Admin extends Component {
                     closeModal={this.closeModal}
                     idToDelete={this.state.idToDelete}
                 />
-                <TouchableOpacity 
-                    style={styles.back}
-                    onPress={()=>this.props.goToAdmin()}
-                >
-                    <Text>back</Text>
-                </TouchableOpacity>
+                <Header goBack={this.props.goToAdmin}/>
                 <Text style={styles.screenTitle}>Create Recipe</Text>
                 <RecipeInput />
                 <CategoryList 

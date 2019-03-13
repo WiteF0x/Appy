@@ -19,3 +19,6 @@ export const createRecipeAction = createAction('Create Recipe Action');
 export const createArticleAction = createAction('Create Article Action');
 export const getRecipesByCategoryAction = createAction('Get Recipes By Category Action');
 export const getArticlesByCategoryAction = createAction('Get Articles By Category Action');
+
+export const getChildrenOfCategoryAction = createAction('Get Children Of Category Action');
+export const setChildrenOfCategoryAction = createAction('Set Children Of Category Action');

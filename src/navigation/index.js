@@ -14,6 +14,20 @@ import Articles from '../screens/ArticleScreen';
 import CreateArticleScreen from '../screens/CreateArticle';
 import CreateRecipeScreen from '../screens/CreateRecipe';
 import CreateCategoryScreen from '../screens/CreateCategory';
+import FullArticleScreen from '../screens/FullArticleScreen';
+import ChildCategories from '../screens/CategoryChildrenScreen';
+
+const CreateCategoryNavigation = createStackNavigator({
+    MainCategory: {
+        screen: CreateCategoryScreen,
+    },
+    ChildCategories: {
+        screen: ChildCategories,
+    },
+}, {
+    initialRouteName: 'MainCategory',
+    headerMode: 'none',
+});
 
 const AdminNavigation = createStackNavigator({
     MainAdmin: {
@@ -26,12 +40,25 @@ const AdminNavigation = createStackNavigator({
         screen: CreateRecipeScreen,
     },
     CreateCategory: {
-        screen: CreateCategoryScreen,
+        screen: CreateCategoryNavigation,
     },
 }, {
     initialRouteName: 'MainAdmin',
     headerMode: 'none',
 });
+
+const ArticleNavigation = createStackNavigator({
+    MainArticle: {
+        screen: Articles
+    },
+    FullArticle: {
+        screen: FullArticleScreen,
+    },
+}, {
+    initialRouteName: 'MainArticle',
+    headerMode: 'none',
+}
+);
 
 const mainNavigation = createMaterialBottomTabNavigator({
     Recipes: {
@@ -44,7 +71,7 @@ const mainNavigation = createMaterialBottomTabNavigator({
         }
     },
     Articles: {
-        screen: Articles,
+        screen: ArticleNavigation,
         navigationOptions: {
             tabBarLabel: 'Articles',
             tabBarIcon:({tintColor})=>(

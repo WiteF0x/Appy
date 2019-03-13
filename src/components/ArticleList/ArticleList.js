@@ -13,6 +13,7 @@ const ArticleList = props => {
             data={articles}
             renderItem={(info) => (
                 <ArticleListItem
+                    goToFull={props.goToFull}
                     selectItem={props.selectItem}
                     articleId={info.item._id}
                     articleTitle={info.item.title}

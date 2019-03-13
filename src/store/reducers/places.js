@@ -1,6 +1,6 @@
 import { createReducer } from 'redux-act';
 
-import { setArticlesAction, setCategoriesAction, setRecipesAction } from '../actions';
+import { setArticlesAction, setCategoriesAction, setRecipesAction, setChildrenOfCategoryAction } from '../actions';
 
 const initialState = {
     articles: [],
@@ -24,6 +24,10 @@ export default createReducer({
     [setCategoriesAction]: (state, data) => ({
         ...state,
         categories: data,
+    }),
+    [setChildrenOfCategoryAction]: (state, data) => ({
+        ...state,
+        childcategories: data,
     })
 
 }, initialState);

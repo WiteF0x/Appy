@@ -20,6 +20,8 @@ import {
   createArticleAction,
   getRecipesByCategoryAction,
   getArticlesByCategoryAction,
+  getChildrenOfCategoryAction,
+  setChildrenOfCategoryAction,
 } from '../actions';
 
 
@@ -134,11 +136,19 @@ function* getRecipesByCategory({payload}) {
 
 function* getArticlesByCategory({payload}) {
   try {
-    console.log(payload);
     const { data } = yield call(api.get, `v1/article/byCategory/${payload}`);
     yield put(setArticlesAction(data));
   }catch (error) {
     console.log(error);
+  }
+}
+
+function* getChildCategories({payload}) {
+  try {
+    const { data } = yield call(api.get, `v1/category/categoryList/${payload}`);
+    yield put(setChildrenOfCategoryAction(data));
+  }catch (error){
+    console.log(error)
   }
 }
 
@@ -156,8 +166,6 @@ export default function* homeSaga() {
     takeLatest(createArticleAction, createArticle),
     takeLatest(getRecipesByCategoryAction, getRecipesByCategory),
     takeLatest(getArticlesByCategoryAction, getArticlesByCategory),
+    takeLatest(getChildrenOfCategoryAction, getChildCategories),
   ]);
 }
-
-//5c83a807001fbf0400fca552 MEET
-//5c83a828001fbf0400fca554 SOUP

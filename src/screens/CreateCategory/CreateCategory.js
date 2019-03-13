@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
-    TouchableOpacity,
 } from 'react-native';
 
 import CategoryList from '../../components/CategoryList/CategoryList';
 import CategoryInput from '../../components/CategoryInput/CategoryInput';
 import CategoryDeleteModal from '../../components/CategoryDeleteModal/CategoryDeleteModal';
+import Header from '../../components/BackHeader/backHeader';
+
 
 import styles from './style';
 
@@ -25,6 +26,11 @@ class CreateCategory extends Component {
     };
     closeModal = () => this.setState({ModalVisible: false});
 
+    // goToFull = (title,id) => this.props.navigation.navigate('ChildCategories', {
+    //     title: title,
+    //     id: id,
+    //   });
+  
     render() {
         return(
             <View style={[styles.container, styles.containerView]}>
@@ -33,15 +39,11 @@ class CreateCategory extends Component {
                     closeModal={this.closeModal}
                     idToDelete={this.state.idToDelete}
                 />
-                <TouchableOpacity 
-                    style={styles.back}
-                    onPress={()=>this.props.goToAdmin()}
-                >
-                    <Text>back</Text>
-                </TouchableOpacity>
+                <Header goBack={this.props.goToAdmin} />       
                 <Text style={styles.screenTitle}>Create Category</Text>
                 <CategoryInput />
-                <CategoryList 
+                <CategoryList
+                    goToFull={this.props.goToFull} 
                     categories={this.props.categories}
                     selectItem={this.selectItem}    
                 />

@@ -18,6 +18,7 @@ class Article extends Component {
     state = {
        ModalVisible: false,
        idToDelete: null,
+       visibleContent: false,
     };
 
     selectItem = (id) => {
@@ -25,8 +26,14 @@ class Article extends Component {
         ModalVisible: true,
         idtoDelete: id,
       });
-    }
+    };
+
     closeModal = () => this.setState({ModalVisible: false});
+
+    // switchContent = (visible) => {
+    //   this.setState({visibleContent: !visible})
+    //   console.log(this.state.visibleContent);
+    // };
 
     render() {
         return (
@@ -46,6 +53,9 @@ class Article extends Component {
                     categories={this.props.categories}
                   />
                   <ArticleList
+                    // visibleContent={this.state.visibleContent}
+                    // switchContent={this.switchContent}
+                    goToFull={this.props.goToFull}
                     selectItem={this.selectItem}
                     articles={this.props.articles}
                   />

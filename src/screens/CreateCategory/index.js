@@ -17,11 +17,17 @@ class CreateCategoryScreen extends Component {
     };
     goToAdmin = () => this.props.navigation.navigate('MainAdmin');
 
+    goToFull = (title,id) => this.props.navigation.navigate('ChildCategories', {
+      title: title,
+      id: id,
+    });
+
     render() {
         return(
             <CreateCategory 
               categories={this.props.categories}
-              goToAdmin={this.goToAdmin}  
+              goToAdmin={this.goToAdmin}
+              goToFull={this.goToFull}  
             />
         );
     }

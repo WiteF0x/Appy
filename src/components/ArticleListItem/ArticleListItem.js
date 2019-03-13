@@ -8,25 +8,25 @@ import {
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import styles from './style';
-// let articleContent = null;
 
-//     if (props.Mvisible) {
-//         modalContent = (
-//             <View style={styles.textCont}>
-//                 <Text style={styles.text}></Text>
-//             </View>
-//         );
-//     }
-
-const ArticlelistItem = (props) => (
-        <View style={styles.listItem} >
-            <Text style={styles.title}>{props.articleTitle}</Text>
-            <Text style={styles.text}>{props.articleText}</Text>
-            <Text style={styles.decription}>{props.articleDescription}</Text>
-            <TouchableOpacity onPress={()=>props.selectItem(props.articleId)}>
-                <Icon name="ios-trash" color="red" size={30}/>
+class ArticlelistItem extends React.Component {
+  state = {
+    isOpen: false,
+  }
+  
+  render(){
+    return(
+         <View style={styles.listItem} >
+            <TouchableOpacity onPress={()=>this.props.goToFull(this.props.articleTitle,this.props.articleText,this.props.articleDescription)}>
+              <Text style={styles.title}>{this.props.articleTitle}</Text>
+              <Text style={styles.text}>{this.props.articleText}</Text>
             </TouchableOpacity>
-        </View>
-);
+            <TouchableOpacity onPress={()=>this.props.selectItem(this.props.articleId)}>
+              <Icon name="ios-trash" color="red" size={30}/>
+            </TouchableOpacity>
+         </View>
+    )
+  }
+}
 
 export default ArticlelistItem;

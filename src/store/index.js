@@ -11,6 +11,7 @@ const rootReducer = combineReducers({
     articles: placesReducer,
     recipes: placesReducer,
     categories: placesReducer,
+    childcategories: placesReducer,
 });
 
 const sagaMiddleware = createSagaMiddleware();
