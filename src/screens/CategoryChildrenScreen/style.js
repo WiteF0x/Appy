@@ -18,7 +18,13 @@ const styles = StyleSheet.create({
         fontSize: scale(24),
         color: 'orange',
         margin: scale(10),
-    }
+    },
+    title: {
+        fontSize: scale(20),
+        textAlign: 'center',
+        marginBottom: scale(15),
+        marginTop: scale(10),
+    },
 });
 
 export default styles;

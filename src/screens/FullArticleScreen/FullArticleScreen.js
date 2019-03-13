@@ -5,7 +5,7 @@ import {
     Text,
 } from 'react-native';
 
-import Header from '../../components/ArticleHeader/articleHeader';
+import Header from '../../components/BackHeader/backHeader';
 
 import styles from './styles';
 

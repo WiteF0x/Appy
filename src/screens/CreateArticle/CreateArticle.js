@@ -5,7 +5,7 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
-import CategoryList from '../../components/CategoryList/CategoryList';
+import CategoryList from '../../components/TrueCategoryList/CategoryList';
 import ArticleInput from '../../components/ArticleInput/ArticleInput';
 import CategoryDeleteModal from '../../components/CategoryDeleteModal/CategoryDeleteModal';
 
