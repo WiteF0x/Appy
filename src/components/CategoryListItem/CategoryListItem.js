@@ -5,9 +5,14 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import styles from './style';
 
-const CategorylistItem = (props) => (
+const CategorylistItem = (props) => {
+  const mymassiv = props.categoryChildren;
+  return(
     <View style={styles.listItem} >
-      <TouchableOpacity onPress={()=>props.goToFull(props.categoryTitle,props.categoryId)}>
+      <TouchableOpacity 
+        onPress={()=>{
+          props.goToFull(props.categoryTitle,props.categoryId,{mymassiv});
+          }}>
         <Text style={styles.titletext}>Title:</Text>
         <Text style={styles.title}>{props.categoryTitle}</Text>
         <Text style={styles.idtext}>ID:</Text>
@@ -17,6 +22,6 @@ const CategorylistItem = (props) => (
         <Icon name="ios-trash" color="red" size={30} />
       </TouchableOpacity>
     </View>
-);
+)};
 
 export default CategorylistItem;

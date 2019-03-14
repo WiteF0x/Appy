@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import { 
   getChildrenOfCategoryAction,
   getCategoriesAction,
+  getCatChildAction,
 } from '../../store/actions';
 
 import Children from './CategoryChildren';
@@ -13,37 +14,49 @@ import Children from './CategoryChildren';
   state => ({
     childcategories: state.childcategories.childcategories,
     categories: state.categories.categories,
+    catchild: state.catchild.catchild,
+    allobj: state.objcat.objcat,
   }),
   ({
     onGetChildren: getChildrenOfCategoryAction,
     onGetCategories: getCategoriesAction,
+    onGetCatChild: getCatChildAction,
   })
 )
 class CategoryChildren extends Component {
   state = {
     gotTitle: null,
     id: null,
+    children: null,
+    testobj: {},
+    childmas: [],
   };
   
     componentDidMount() {
-      console.log('_____________________DID MOUNT________________________________');
       const currentTitle = this.props.navigation.getParam('title');
       const currentId = this.props.navigation.getParam('id');
+      const currentChildren = this.props.navigation.getParam('children');
 
       this.setState({
           gotTitle: currentTitle, 
           id: currentId,
-      },() => console.log(this.state.id));
-      this.props.onGetCategories();
-      console.log('_____________________PLEASE SHOW ME STATE_________________');
-      console.log(this.state.id);
+          children: currentChildren,
+          testobj: this.props.allobj,
+      },() => {
+        for(var i=0; i<currentChildren.mymassiv.length;i++){
+          this.state.childmas.push(this.state.testobj[currentChildren.mymassiv[i]])
+        }
+      });
+        
     };
 
     render() {
         return(
           <Children 
-            children={this.props.categories}
-            myParent={this.state.id}  
+            onGetCatChild={this.props.onGetCatChild}
+            testobj={this.state.testobj}
+            children={this.state.children}
+            childmas={this.state.childmas}
           />
         );
     }

@@ -22,11 +22,9 @@ const styles = StyleSheet.create({
     icon: {
         
     },
-    listItem: {
-        width: "95%",
-        margin: scale(10),
-        padding: scale(10),
-        backgroundColor: "#eee",
+    main: {
+        width: '100%',
+        height: scale(100),
     },
 });
 

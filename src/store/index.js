@@ -4,14 +4,21 @@ import createSagaMiddleware from 'redux-saga';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { createReactNavigationReduxMiddleware } from 'react-navigation-redux-helpers';
 import sagas from './sagas';
-import placesReducer from './reducers/places';
+import articleReducer from './reducers/articleReducer';
+import recipeReducer from './reducers/recipeReducer';
+import categoryReducer from './reducers/categoryReducer';
+import childReducer from './reducers/childReducer';
+import catchildReducer from './reducers/catchildReducer';
+import objCatChildReducer from './reducers/objCategoryRecuder';
 
 const rootReducer = combineReducers({
     nav: navigationReducer,
-    articles: placesReducer,
-    recipes: placesReducer,
-    categories: placesReducer,
-    childcategories: placesReducer,
+    articles: articleReducer,
+    recipes: recipeReducer,
+    categories: categoryReducer,
+    childcategories: childReducer,
+    catchild: catchildReducer,
+    objcat: objCatChildReducer,
 });
 
 const sagaMiddleware = createSagaMiddleware();

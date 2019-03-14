@@ -6,18 +6,18 @@ import styles from './style';
 
 const ChildrenList = props => {
 
-    const { children } = props;
-      
+    const { childmas } = props;
+      console.log('Children List')
+      console.log(childmas)
+
     return (    
             <FlatList 
                 style = {styles.listContainer}
-                data={children}
+                data={childmas}
                 renderItem={(info) => (
                     <ChildrenListItem
-                        childId={info.item._id}
-                        childTitle={info.item.title}
-                        childParent={info.item.parentId}
-                        myParent={props.myParent}
+                        // onGetCatChild={props.onGetCatChild}
+                        childtitle={info.item.title}
                     />
                 )} 
             />
@@ -25,4 +25,4 @@ const ChildrenList = props => {
 }
 
 export default ChildrenList;
-    
+     

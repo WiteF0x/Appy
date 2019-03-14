@@ -4,6 +4,7 @@ import {
   all,
   call,
   takeLatest,
+  takeEvery,
 } from 'redux-saga/effects';
 import { 
   setArticlesAction,
@@ -22,6 +23,8 @@ import {
   getArticlesByCategoryAction,
   getChildrenOfCategoryAction,
   setChildrenOfCategoryAction,
+  getCatChildAction,
+  setCatChildAction
 } from '../actions';
 
 
@@ -37,7 +40,6 @@ function* getAllArticles() {
 
 function* getAllRecipes() {
   try {
-    console.log('________getAllRecipes_________');
     const { data } = yield call(api.get, `v1/recipe/all`);
     yield put(setRecipesAction(data));
   } catch (error) {
@@ -125,7 +127,6 @@ function* createArticle({payload}) {
 
 function* getRecipesByCategory({payload}) {
   try {
-    console.log(payload);
     const { data } = yield call(api.get, `v1/recipe/byCategory/${payload}`);
     yield put(setRecipesAction(data));
     console.log(data);
@@ -152,8 +153,17 @@ function* getChildCategories({payload}) {
   }
 }
 
+function* getCatChild({payload}) {
+  try {
+    const { data } = yield call(api.get, `v1/category/categoryList/${payload}`);
+    yield put(setCatChildAction(data));
+    console.log(data);
+  }catch (error) {
+    console.log(error);
+  }
+};
+
 export default function* homeSaga() {
-  console.log('fort get articles');
   yield all([
     takeLatest(getArticlesAction, getAllArticles),
     takeLatest(getRecipesAction, getAllRecipes),
@@ -167,5 +177,6 @@ export default function* homeSaga() {
     takeLatest(getRecipesByCategoryAction, getRecipesByCategory),
     takeLatest(getArticlesByCategoryAction, getArticlesByCategory),
     takeLatest(getChildrenOfCategoryAction, getChildCategories),
+    takeEvery(getCatChildAction, getCatChild),
   ]);
 }

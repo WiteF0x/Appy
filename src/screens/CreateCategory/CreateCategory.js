@@ -25,11 +25,6 @@ class CreateCategory extends Component {
         });
     };
     closeModal = () => this.setState({ModalVisible: false});
-
-    // goToFull = (title,id) => this.props.navigation.navigate('ChildCategories', {
-    //     title: title,
-    //     id: id,
-    //   });
   
     render() {
         return(

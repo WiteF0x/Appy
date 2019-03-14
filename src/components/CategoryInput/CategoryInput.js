@@ -37,7 +37,6 @@ class CategoryInput extends React.Component {
     if (categoryInput.trim() === "") {
       return;
     }
-    console.log(categoryInput);
     this.props.onCreateCategory(categoryInput);
   }
 

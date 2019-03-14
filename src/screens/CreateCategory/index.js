@@ -13,13 +13,13 @@ import { getCategoriesAction } from '../../store/actions';
 class CreateCategoryScreen extends Component {
     componentDidMount() {
         this.props.onGetCategories();
-        console.log(this.props.categories);
     };
     goToAdmin = () => this.props.navigation.navigate('MainAdmin');
 
-    goToFull = (title,id) => this.props.navigation.navigate('ChildCategories', {
+    goToFull = (title,id,children) => this.props.navigation.navigate('ChildCategories', {
       title: title,
       id: id,
+      children: children,
     });
 
     render() {

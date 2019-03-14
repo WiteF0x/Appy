@@ -13,7 +13,6 @@ import { connect } from 'react-redux';
 class CreateArticleScreen extends Component {
     componentDidMount() {
         this.props.onGetCategories();
-        console.log(this.props.categories);
     };
 
     goToAdmin = () => this.props.navigation.navigate('MainAdmin');

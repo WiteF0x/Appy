@@ -22,3 +22,6 @@ export const getArticlesByCategoryAction = createAction('Get Articles By Categor
 
 export const getChildrenOfCategoryAction = createAction('Get Children Of Category Action');
 export const setChildrenOfCategoryAction = createAction('Set Children Of Category Action');
+
+export const getCatChildAction = createAction('Get Cat Child Action');
+export const setCatChildAction = createAction('Set Cat Child Action');

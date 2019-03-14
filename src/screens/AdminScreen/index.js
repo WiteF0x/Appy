@@ -8,11 +8,9 @@ import { getCategoriesAction } from '../../store/actions';
     state => ({categories:state.categories.categories}),
     ({onGetCategories: getCategoriesAction}),
 )
-
 class AdminScreen extends Component {
     componentDidMount() {
         this.props.onGetCategories();
-        console.log(this.props.categories);
     }
 
     goToArticle = () => this.props.navigation.navigate('CreateArticle');

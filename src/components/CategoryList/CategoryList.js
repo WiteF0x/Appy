@@ -18,6 +18,7 @@ const CategoryList = props => {
                         selectItem={props.selectItem}
                         categoryId={info.item._id}
                         categoryTitle={info.item.title}
+                        categoryChildren={info.item.children}
                     />
                 )} 
             />

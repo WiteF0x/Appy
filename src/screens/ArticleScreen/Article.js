@@ -30,11 +30,6 @@ class Article extends Component {
 
     closeModal = () => this.setState({ModalVisible: false});
 
-    // switchContent = (visible) => {
-    //   this.setState({visibleContent: !visible})
-    //   console.log(this.state.visibleContent);
-    // };
-
     render() {
         return (
             <ImageBackground source={require('../../assets/articleBg.jpg')} style={styles.background} >
