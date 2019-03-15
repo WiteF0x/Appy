@@ -28,6 +28,7 @@ class Children extends Component {
             <View>
             <Text style={styles.title}>Child Categories</Text>
             <ChildrenList
+                goToFull={this.props.goToFull}
                 onGetCatChild={this.props.onGetCatChild} 
                 // testobj={this.props.testobj} 
                 childmas={this.props.childmas}

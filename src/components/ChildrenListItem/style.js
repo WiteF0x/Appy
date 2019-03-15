@@ -9,18 +9,25 @@ const styles = StyleSheet.create({
     },
     id: {
         color: 'grey',
-        fontSize: scale(12),
+        marginTop: scale(20),
+        fontSize: scale(9),
     },
     titletext: {
         fontSize: scale(15),
         color: 'orange',
     },
     title: {
-        fontSize: scale(12),
-        color: 'grey',
+        fontSize: scale(17),
+        color: 'orange',
     },
     icon: {
         
+    },
+    listItem: {
+        width: "95%",
+        margin: scale(10),
+        padding: scale(10),
+        backgroundColor: "#eee",
     },
     main: {
         width: '100%',
