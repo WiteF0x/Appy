@@ -1,159 +1,159 @@
 -- Merging decision tree log ---
 manifest
-ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
-MERGED from [:react-native-vector-icons] B:\RNApp\cooking-app\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\1f822b82c114ea763b7b9f40346d454f\AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\fb22c5a105d1df237a0541916a37968f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\89b051d815996cb77cd8ed192f91ff89\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\eb11a8a31b9e0ab3928d0e7f26445a77\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\4c68bdeeb2cd786a27816acd56a31776\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\fdda94b452e10dee5f5afa8cf7e796bf\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\48cd066ac87aa4e142dee7623752b8cf\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\4245ea719f50ed741725996816ec680c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\7dbbaeab85a0e556a87542d6887471ba\AndroidManifest.xml:10:1-18:12
-MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\1dd1f39a1d2023472af9cadb26b0e1ef\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\0daaaa2723074f5a58520075266f4957\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\c267409bbf240222a4212c575e5089e1\AndroidManifest.xml:1:1-4:12
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\983df8b476c5b9ff67d4e6f0757ebac0\AndroidManifest.xml:1:1-3:12
-MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\d5f625f80088c2ba7fae490654d36592\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\146e85db0268b6ed704cf0e0aa6af3c4\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\ef26f6e5f786b98beb9f0cc258b8d285\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\71a04ae38cc9671f15765ee6d1131bb9\AndroidManifest.xml:2:1-9:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\66ad6b7beb850f8b4d4dd60033e1e946\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\099c8fa5cbd91f533990534c2e247129\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e059e51763b4f690e18eb5e53a3b8079\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\719a051a4956905afd7751d46383c2f1\AndroidManifest.xml:17:1-22:12
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
+ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-vector-icons] D:\RNApp\cooking-app\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\b1ce32e7cf508566b8687105e93bbd0b\AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\de1e0a00cc7c3e55f7e2981b8551bd2a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\cf12d023c45eca20966192cd31240596\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\8ea955ade811b3a83b1ae434fb4b7856\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\7604a562b5fa9b148170fc2651bc1721\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8877fdb75f48aaeddb1562128114c9c5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\dd21ba50ab12ab6fde2935f1e123b1bf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f7222534c3057491a88c10a09775986b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\f9c24c480981cf978877d1d87d9f702c\AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\fe4ddaab320cdea8bb6cd849f48355d7\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\01f1edaa8343f6e40eff9568461f3e77\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\51b1899d991f7ac819b268c14560de59\AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\f1e44973b32882b86eb89faf0b4259f7\AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\6c85c086831acc12e9101fc895279d01\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\60efae7a23f695f524242ea9d2be4c6c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\aa251ff9a38298575f6cfb090eec222a\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\2b55ff1e559e2d9484770c998fbbab5a\AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\9f28f21dad788df97d62638f41e3b925\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5077cc4508d1887312bfab984111a8c2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\451fcb980e4ba58f0fe03788f24460eb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9327a0ec518ebd10975aadcdb29fc4f0\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
 	package
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:2:5-24
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:2:5-24
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\1f822b82c114ea763b7b9f40346d454f\AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\1f822b82c114ea763b7b9f40346d454f\AndroidManifest.xml:11:5-78
+ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\b1ce32e7cf508566b8687105e93bbd0b\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\b1ce32e7cf508566b8687105e93bbd0b\AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:5:22-75
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:5:22-75
 application
-ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:7:5-24:19
-MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\1f822b82c114ea763b7b9f40346d454f\AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\1f822b82c114ea763b7b9f40346d454f\AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\c267409bbf240222a4212c575e5089e1\AndroidManifest.xml:3:3-17
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\c267409bbf240222a4212c575e5089e1\AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\983df8b476c5b9ff67d4e6f0757ebac0\AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\983df8b476c5b9ff67d4e6f0757ebac0\AndroidManifest.xml:2:3-17
+ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:7:5-24:19
+MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\b1ce32e7cf508566b8687105e93bbd0b\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\b1ce32e7cf508566b8687105e93bbd0b\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\51b1899d991f7ac819b268c14560de59\AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\51b1899d991f7ac819b268c14560de59\AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\f1e44973b32882b86eb89faf0b4259f7\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\f1e44973b32882b86eb89faf0b4259f7\AndroidManifest.xml:2:3-17
 	android:label
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:9:7-39
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:9:7-39
 	android:icon
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:10:7-41
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:10:7-41
 	android:allowBackup
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:11:7-34
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:11:7-34
 	android:theme
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:12:7-38
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:12:7-38
 	android:name
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:8:7-38
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:8:7-38
 activity#com.rnapp.MainActivity
-ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:13:7-22:18
+ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:13:7-22:18
 	android:label
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:15:9-41
 	android:windowSoftInputMode
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:17:9-51
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:17:9-51
 	android:configChanges
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:16:9-79
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:16:9-79
 	android:name
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:14:9-37
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:14:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:18:9-21:25
+ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:18:9-21:25
 action#android.intent.action.MAIN
-ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:19:13-65
+ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:19:13-65
 	android:name
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:19:21-62
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:19:21-62
 category#android.intent.category.LAUNCHER
-ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:20:13-73
+ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:20:13-73
 	android:name
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:20:23-70
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:20:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:23:7-84
+ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:23:7-84
 	android:name
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:23:17-81
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:23:17-81
 uses-sdk
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-MERGED from [:react-native-vector-icons] B:\RNApp\cooking-app\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] B:\RNApp\cooking-app\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\1f822b82c114ea763b7b9f40346d454f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\1f822b82c114ea763b7b9f40346d454f\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\fb22c5a105d1df237a0541916a37968f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\fb22c5a105d1df237a0541916a37968f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\89b051d815996cb77cd8ed192f91ff89\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\89b051d815996cb77cd8ed192f91ff89\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\eb11a8a31b9e0ab3928d0e7f26445a77\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\eb11a8a31b9e0ab3928d0e7f26445a77\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\4c68bdeeb2cd786a27816acd56a31776\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\4c68bdeeb2cd786a27816acd56a31776\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\fdda94b452e10dee5f5afa8cf7e796bf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\fdda94b452e10dee5f5afa8cf7e796bf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\48cd066ac87aa4e142dee7623752b8cf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\48cd066ac87aa4e142dee7623752b8cf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\4245ea719f50ed741725996816ec680c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\4245ea719f50ed741725996816ec680c\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\7dbbaeab85a0e556a87542d6887471ba\AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\7dbbaeab85a0e556a87542d6887471ba\AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\1dd1f39a1d2023472af9cadb26b0e1ef\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\1dd1f39a1d2023472af9cadb26b0e1ef\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\0daaaa2723074f5a58520075266f4957\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\0daaaa2723074f5a58520075266f4957\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\c267409bbf240222a4212c575e5089e1\AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\c267409bbf240222a4212c575e5089e1\AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\d5f625f80088c2ba7fae490654d36592\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\d5f625f80088c2ba7fae490654d36592\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\146e85db0268b6ed704cf0e0aa6af3c4\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\146e85db0268b6ed704cf0e0aa6af3c4\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\ef26f6e5f786b98beb9f0cc258b8d285\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\ef26f6e5f786b98beb9f0cc258b8d285\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\71a04ae38cc9671f15765ee6d1131bb9\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\71a04ae38cc9671f15765ee6d1131bb9\AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\66ad6b7beb850f8b4d4dd60033e1e946\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\66ad6b7beb850f8b4d4dd60033e1e946\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\099c8fa5cbd91f533990534c2e247129\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\099c8fa5cbd91f533990534c2e247129\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e059e51763b4f690e18eb5e53a3b8079\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e059e51763b4f690e18eb5e53a3b8079\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\719a051a4956905afd7751d46383c2f1\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Professional\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\719a051a4956905afd7751d46383c2f1\AndroidManifest.xml:20:5-44
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-vector-icons] D:\RNApp\cooking-app\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] D:\RNApp\cooking-app\node_modules\react-native-vector-icons\android\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\b1ce32e7cf508566b8687105e93bbd0b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.2] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\react-native-0.55.2.aar\b1ce32e7cf508566b8687105e93bbd0b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\de1e0a00cc7c3e55f7e2981b8551bd2a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\de1e0a00cc7c3e55f7e2981b8551bd2a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\cf12d023c45eca20966192cd31240596\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\cf12d023c45eca20966192cd31240596\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\8ea955ade811b3a83b1ae434fb4b7856\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\8ea955ade811b3a83b1ae434fb4b7856\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\7604a562b5fa9b148170fc2651bc1721\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\7604a562b5fa9b148170fc2651bc1721\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8877fdb75f48aaeddb1562128114c9c5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\8877fdb75f48aaeddb1562128114c9c5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\dd21ba50ab12ab6fde2935f1e123b1bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\dd21ba50ab12ab6fde2935f1e123b1bf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f7222534c3057491a88c10a09775986b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\f7222534c3057491a88c10a09775986b\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\f9c24c480981cf978877d1d87d9f702c\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\textlayoutbuilder-1.0.0.aar\f9c24c480981cf978877d1d87d9f702c\AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\fe4ddaab320cdea8bb6cd849f48355d7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\fresco-1.3.0.aar\fe4ddaab320cdea8bb6cd849f48355d7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\01f1edaa8343f6e40eff9568461f3e77\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.3.0.aar\01f1edaa8343f6e40eff9568461f3e77\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\51b1899d991f7ac819b268c14560de59\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\soloader-0.1.0.aar\51b1899d991f7ac819b268c14560de59\AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\6c85c086831acc12e9101fc895279d01\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\drawee-1.3.0.aar\6c85c086831acc12e9101fc895279d01\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\60efae7a23f695f524242ea9d2be4c6c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.3.0.aar\60efae7a23f695f524242ea9d2be4c6c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\aa251ff9a38298575f6cfb090eec222a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.3.0.aar\aa251ff9a38298575f6cfb090eec222a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\2b55ff1e559e2d9484770c998fbbab5a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\fbcore-1.3.0.aar\2b55ff1e559e2d9484770c998fbbab5a\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\9f28f21dad788df97d62638f41e3b925\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\9f28f21dad788df97d62638f41e3b925\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5077cc4508d1887312bfab984111a8c2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5077cc4508d1887312bfab984111a8c2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\451fcb980e4ba58f0fe03788f24460eb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\451fcb980e4ba58f0fe03788f24460eb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9327a0ec518ebd10975aadcdb29fc4f0\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\TomBom\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\9327a0ec518ebd10975aadcdb29fc4f0\AndroidManifest.xml:20:5-44
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-		ADDED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
-		INJECTED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+IMPLIED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from B:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+IMPLIED from D:\RNApp\cooking-app\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

@@ -1,4 +1,4 @@
-#Wed Mar 06 11:01:57 MSK 2019
-base.0=B\:\\RNApp\\cooking-app\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+#Mon Mar 18 13:34:37 MSK 2019
+base.0=D\:\\RNApp\\cooking-app\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.0=classes.dex
 renamed.0=classes.dex

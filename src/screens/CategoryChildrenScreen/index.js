@@ -34,22 +34,7 @@ class CategoryChildren extends Component {
   
     componentDidMount() {
       console.log('First');
-      const currentTitle = this.props.navigation.getParam('title');
-      const currentId = this.props.navigation.getParam('id');
-      const currentChildren = this.props.navigation.getParam('children');
-
-      this.setState({
-          gotTitle: currentTitle, 
-          id: currentId,
-          children: currentChildren,
-          testobj: this.props.allobj,
-          childmas: [],
-      },() => {
-        console.log(`______________${currentChildren.mymassiv}`)
-        for(var i=0; i<currentChildren.mymassiv.length;i++){
-          this.state.childmas.push(this.state.testobj[currentChildren.mymassiv[i]])
-        }
-      });
+      this.setUpScreen();
     };
 
     goToFull2 = (title,id,children)=>{
@@ -57,28 +42,45 @@ class CategoryChildren extends Component {
       currentId=null;
       currentChildren=null;
       this.props.navigation.navigate('ChildCategories', {
-      title: title,
-      id: id,
-      children: children,
-    });
-    this.setState({
+        title: title,
+        id: id,
+        children: children,
+      });
+      this.setState({
           gotTitle: null, 
           id: null,
           children: null,
           testobj: null,
           childmas: null,
-    })
-    console.log('Will be mount');
-    this.componentDidMount();
+      },() => {
+        console.log('Will be mount');
+        this.setUpScreen();
+    });
   };
+
+  setUpScreen() {
+    const currentTitle = this.props.navigation.getParam('title');
+    const currentId = this.props.navigation.getParam('id');
+    const currentChildren = this.props.navigation.getParam('children');
+
+    this.setState({
+        gotTitle: currentTitle, 
+        id: currentId,
+        children: currentChildren,
+        testobj: this.props.allobj,
+        childmas: [],
+    },() => {
+      console.log(`______________${currentChildren.mymassiv}`)
+      for(var i=0; i<currentChildren.mymassiv.length;i++){
+        this.state.childmas.push(this.state.testobj[currentChildren.mymassiv[i]])
+      }
+    });
+  }
 
     render() {
         return(
           <Children
             goToFull={this.goToFull2} 
-            onGetCatChild={this.props.onGetCatChild}
-            testobj={this.state.testobj}
-            children={this.state.children}
             childmas={this.state.childmas}
           />
         );

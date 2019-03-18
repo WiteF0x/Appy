@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "B:\\RNApp\\cooking-app\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "D:\\RNApp\\cooking-app\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Professional\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\fb22c5a105d1df237a0541916a37968f\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\TomBom\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\de1e0a00cc7c3e55f7e2981b8551bd2a\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

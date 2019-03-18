@@ -16,7 +16,6 @@ const ChildrenList = props => {
                 data={childmas}
                 renderItem={(info) => (
                     <ChildrenListItem
-                        // onGetCatChild={props.onGetCatChild}
                         goToFull={props.goToFull}
                         childtitle={info.item.title}
                         childid={info.item._id}
