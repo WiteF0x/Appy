@@ -25,3 +25,7 @@ export const setChildrenOfCategoryAction = createAction('Set Children Of Categor
 
 export const getCatChildAction = createAction('Get Cat Child Action');
 export const setCatChildAction = createAction('Set Cat Child Action');
+
+export const setMenuItemAction = createAction('Get Menu Item Action');
+export const cleanMenuAction = createAction('Clean Menu Action');
+export const deletePartMenuAction = createAction('Delete Part Menu Action');

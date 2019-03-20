@@ -6,6 +6,8 @@ import {
   getChildrenOfCategoryAction,
   getCategoriesAction,
   getCatChildAction,
+  setMenuItemAction,
+  deletePartMenuAction,
 } from '../../store/actions';
 
 import Children from './CategoryChildren';
@@ -21,6 +23,8 @@ import Children from './CategoryChildren';
     onGetChildren: getChildrenOfCategoryAction,
     onGetCategories: getCategoriesAction,
     onGetCatChild: getCatChildAction,
+    onSetMenuItem: setMenuItemAction,
+    onDeleteAfter: deletePartMenuAction,
   })
 )
 class CategoryChildren extends Component {
@@ -30,10 +34,10 @@ class CategoryChildren extends Component {
     children: null,
     testobj: {},
     childmas: [],
+    menu: [],
   };
   
     componentDidMount() {
-      console.log('First');
       this.setUpScreen();
     };
 
@@ -41,11 +45,13 @@ class CategoryChildren extends Component {
       currentTitle=null;
       currentId=null;
       currentChildren=null;
+
       this.props.navigation.navigate('ChildCategories', {
         title: title,
         id: id,
         children: children,
       });
+      
       this.setState({
           gotTitle: null, 
           id: null,
@@ -53,7 +59,6 @@ class CategoryChildren extends Component {
           testobj: null,
           childmas: null,
       },() => {
-        console.log('Will be mount');
         this.setUpScreen();
     });
   };
@@ -63,6 +68,12 @@ class CategoryChildren extends Component {
     const currentId = this.props.navigation.getParam('id');
     const currentChildren = this.props.navigation.getParam('children');
 
+    this.props.onSetMenuItem({
+      title:currentTitle,
+      id:currentId,
+      children: currentChildren,
+    });
+
     this.setState({
         gotTitle: currentTitle, 
         id: currentId,
@@ -70,16 +81,17 @@ class CategoryChildren extends Component {
         testobj: this.props.allobj,
         childmas: [],
     },() => {
-      console.log(`______________${currentChildren.mymassiv}`)
-      for(var i=0; i<currentChildren.mymassiv.length;i++){
-        this.state.childmas.push(this.state.testobj[currentChildren.mymassiv[i]])
+        for(var i=0; i<currentChildren.mymassiv.length;i++){
+          this.state.childmas.push(this.state.testobj[currentChildren.mymassiv[i]])
       }
     });
+
   }
 
     render() {
         return(
           <Children
+            onDeleteAfter={this.props.onDeleteAfter}
             goToFull={this.goToFull2} 
             childmas={this.state.childmas}
           />

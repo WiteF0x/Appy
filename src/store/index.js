@@ -10,6 +10,7 @@ import categoryReducer from './reducers/categoryReducer';
 import childReducer from './reducers/childReducer';
 import catchildReducer from './reducers/catchildReducer';
 import objCatChildReducer from './reducers/objCategoryRecuder';
+import menuReducer from './reducers/menuReducer';
 
 const rootReducer = combineReducers({
     nav: navigationReducer,
@@ -19,6 +20,7 @@ const rootReducer = combineReducers({
     childcategories: childReducer,
     catchild: catchildReducer,
     objcat: objCatChildReducer,
+    menu: menuReducer,
 });
 
 const sagaMiddleware = createSagaMiddleware();

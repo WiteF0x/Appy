@@ -7,8 +7,6 @@ import styles from './style';
 const ChildrenList = props => {
 
     const { childmas } = props;
-      console.log('Children List')
-      console.log(childmas)
 
     return (    
             <FlatList 
