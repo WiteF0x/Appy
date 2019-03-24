@@ -12,7 +12,8 @@ const CategorylistItem = (props) => {
       <TouchableOpacity 
         onPress={()=>{
           props.goToFull(props.categoryTitle,props.categoryId,{mymassiv});
-          }}>
+        }}
+      >
         <Text style={styles.titletext}>Title:</Text>
         <Text style={styles.title}>{props.categoryTitle}</Text>
         <Text style={styles.idtext}>ID:</Text>

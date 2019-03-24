@@ -4,7 +4,8 @@ import { scale } from 'react-native-size-matters';
 
 const styles = StyleSheet.create({
     title: {
-        fontSize: scale(12),
+        marginLeft: scale(15),
+        fontSize: scale(14),
         color: 'black',
     },
     listItem: {

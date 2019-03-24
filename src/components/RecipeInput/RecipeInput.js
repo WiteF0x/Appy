@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { 
     View, 
     Text, 
@@ -8,18 +8,22 @@ import {
 
 import PropTypes from 'prop-types';
 
+import Icon from 'react-native-vector-icons/Ionicons';
+
 import { connect } from 'react-redux'; 
 
 import styles from './style';
 
 import { createRecipeAction } from '../../store/actions';
 
+import MyModal from '../CategorySelectModal/CategorySelectModal';
+
 @connect(
   null,
   ({ onCreateRecipe: createRecipeAction }),
 )
 
-class RecipeInput extends React.Component {
+class RecipeInput extends Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
@@ -32,23 +36,62 @@ class RecipeInput extends React.Component {
     title: '',
     text: '',
     category: '',
+    currentCategoryName: '',
+    isDisable: true,
+    ModVis: false,
+    icon: 'ios-add',
   }
 
-  onTitleInputChange = title => this.setState({ title });
+  selectItem = (id, name) => {
+    this.setState({
+      ModVis: false,
+      category: id,
+      currentCategoryName: name,
+    }, () => {
+      if(this.state.title.trim() != '' && this.state.text.trim() != '' && this.state.category.trim() != ''){
+        this.setState({isDisable: false})
+    }});
+  };
 
-  onTextInputChange = text => this.setState({ text });
+  closeMy = () => this.setState({ModVis: false});
 
-  onCategoryInputChange = category => this.setState({ category });
+  openModal = () => {
+    if(this.state.ModVis === false){
+      this.setState({ModVis: true})
+    } else{
+      this.closeMy();
+    };
+  };
+
+  onTitleInputChange = title => {
+    this.setState({ title })
+    if(this.state.text.trim() != '' && this.state.category.trim() != ''){
+      this.setState({isDisable: false})
+    }
+  };
+
+  onTextInputChange = text => {
+    this.setState({ text })
+    if(this.state.title.trim() != '' && this.state.category.trim() != ''){
+      this.setState({isDisable: false})
+    }
+  };
 
   onAddHandle = () => {
     this.props.onCreateRecipe(this.state);
+    this.setState({
+      title: '',
+      text: '',
+      category: '',
+      currentCategoryName: '',
+      isDisable: true,
+    }); 
   }
 
   render() {
     const { 
         title,
         text,
-        category,
     } = this.state;
 
     return (
@@ -58,30 +101,42 @@ class RecipeInput extends React.Component {
           placeholder='Type the title of recipe'
           value={title} 
           onChangeText={this.onTitleInputChange}
-          style={styles.titleinput}
+          style={styles.input}
         /> 
         <TextInput
             key={2}
             placeholder='Type the text of recipe' 
             value={text}
             onChangeText={this.onTextInputChange}
-            style={styles.textinput}
+            style={styles.input}
         /> 
-        <TextInput
-            key={3}
-            placeholder='Type the category of recipe'
-            value={category}
-            onChangeText={this.onCategoryInputChange} 
-            style={styles.catinput}
-        />   
-        <TouchableOpacity
-          style={styles.myAddButton} 
-          onPress={this.onAddHandle}
-        >
-          <Text style={styles.buttext}>
-            Add
+        <View style={styles.bottomLine}>
+          <TouchableOpacity 
+            style={styles.open}
+            onPress={()=>this.openModal()}
+          >
+            <Icon name={this.state.icon} color='blue' size={20}/>
+          </TouchableOpacity>
+          <Text style={styles.category}>
+            Category:  
+              <Text style={styles.categoryColor}>{this.state.currentCategoryName}</Text>
           </Text>
-        </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.myAddButton} 
+            onPress={this.onAddHandle}
+            disabled={this.state.isDisable}
+          >
+            <Text style={styles.buttext}>
+              Add
+            </Text>
+          </TouchableOpacity>
+        </View>
+        <MyModal 
+          Mvis={this.state.ModVis}       
+          closeMy={this.closeMy}
+          selectItem={this.selectItem}
+          categories={this.props.categories} 
+        />
       </View>
     );
   }

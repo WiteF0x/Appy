@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import FullArticleScreen from './FullArticleScreen';
 
 class FullScreen extends Component {

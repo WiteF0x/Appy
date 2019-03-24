@@ -16,7 +16,7 @@ import {getDeleteArticleAction} from '../../store/actions';
 
 const DeleteModal = props => {
     let modalContent = null;
-
+    console.log(`___________-${props.idToDelete}`);
     if (props.Mvisible) {
         modalContent = (
             <View style={styles.textCont}>

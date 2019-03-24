@@ -19,6 +19,8 @@ const SmallCategoryList = props => {
                     <SmallCategoryItem
                         categoryId={info.item._id}
                         categoryTitle={info.item.title}
+                        closeSelectModal={props.closeSelectModal}
+                        selectCategory={props.selectCategory}
                     />
                 )} 
             />

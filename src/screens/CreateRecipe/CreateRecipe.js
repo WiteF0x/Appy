@@ -4,7 +4,6 @@ import {
     Text,
 } from 'react-native';
 
-import CategoryList from '../../components/TrueCategoryList/CategoryList';
 import RecipeInput from '../../components/RecipeInput/RecipeInput';
 import CategoryDeleteModal from '../../components/CategoryDeleteModal/CategoryDeleteModal';
 import Header from '../../components/BackHeader/backHeader';
@@ -16,7 +15,18 @@ class Admin extends Component {
     state = {
         ModalVisible: false,
         idToDelete: null,
+        takeCategory: '',
     };
+
+    takeCategory = (category) => {
+        this.setState({
+            takeCategory: category,
+        });
+    };
+
+    startFunc() {
+
+    }
 
     selectItem = (id) => {
         this.setState({
@@ -36,11 +46,10 @@ class Admin extends Component {
                 />
                 <Header goBack={this.props.goToAdmin}/>
                 <Text style={styles.screenTitle}>Create Recipe</Text>
-                <RecipeInput />
-                <CategoryList 
+                <RecipeInput 
+                    takenCategory={this.state.takeCategory}
                     categories={this.props.categories}
-                    selectItem={this.selectItem}    
-                />            
+                />
             </View>
         );
     }

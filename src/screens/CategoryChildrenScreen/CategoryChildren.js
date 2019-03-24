@@ -13,12 +13,8 @@ import deletePartMenuAction from '../../store/actions';
 
 import styles from './style';
 @connect(
-    state => ({
-        newmenu:state.menu,
-    }),
-    ({
-        onDeletePartMenu: deletePartMenuAction,
-    })
+    state => ({newmenu:state.menu}),
+    ({onDeletePartMenu: deletePartMenuAction})
 )
 class Children extends Component {  
     render() {

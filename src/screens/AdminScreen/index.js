@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import Admin from './Admin';
 import {connect} from 'react-redux';
 
-import { 
-    getCategoriesAction,
-    cleanMenuAction,
-} from '../../store/actions';
+import { getCategoriesAction } from '../../store/actions';
 
 @connect(
     state => ({categories:state.categories.categories}),

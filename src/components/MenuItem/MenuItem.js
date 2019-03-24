@@ -25,12 +25,12 @@ class MenulistItem extends Component {
                                 size={20} 
                                 color="black"
                             />
-                                <Text style={styles.lastTitle}>
-                                    {this.props.curTitle}
-                                </Text>
+                            <Text style={styles.lastTitle}>
+                                {this.props.curTitle}
+                            </Text>
                         </View>
-                        )
-                }else{
+                    )
+                } else{
                     Content = (
                         <View style={styles.Content}>
                             <Icon 

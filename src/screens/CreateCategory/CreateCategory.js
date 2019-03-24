@@ -36,7 +36,9 @@ class CreateCategory extends Component {
                 />
                 <Header goBack={this.props.goToAdmin} />       
                 <Text style={styles.screenTitle}>Create Category</Text>
-                <CategoryInput />
+                <CategoryInput 
+                    categories={this.props.categories}
+                />
                 <CategoryList
                     goToFull={this.props.goToFull} 
                     categories={this.props.categories}

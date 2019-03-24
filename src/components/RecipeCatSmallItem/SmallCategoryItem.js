@@ -7,8 +7,16 @@ import {connect} from 'react-redux';
 
 const RecipeSmallCategoryItem = (props) => (
     <View style={styles.listItem} >
-      <TouchableOpacity onPress={()=>props.onGetRecipesByCategory(props.categoryId)}>
-        <Text style={styles.title}>{props.categoryTitle}</Text>
+      <TouchableOpacity 
+        onPress={()=>{
+          props.onGetRecipesByCategory(props.categoryId);
+          props.selectCategory(props.categoryId,props.categoryTitle);
+          props.closeSelectModal();
+        }}
+      >
+        <Text style={styles.title}>
+          {props.categoryTitle}
+        </Text>
       </TouchableOpacity>
     </View>
 );

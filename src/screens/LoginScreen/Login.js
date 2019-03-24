@@ -4,6 +4,8 @@ import {
     Text,
 } from 'react-native';
 
+import { material } from 'react-native-typography'
+
 import { INTERACTIVE_TIMER_DURATION } from '../../constants/login';
 
 import styles from './styles';
@@ -17,7 +19,7 @@ class LoginScreen extends Component {
     render() {
         return(
             <View style={styles.container}>
-                <Text style={styles.text}>Welcome</Text>
+                <Text style={material.display2}>Welcome</Text>
             </View>
         );
     }

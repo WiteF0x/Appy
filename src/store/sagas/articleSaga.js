@@ -33,7 +33,6 @@ function* getAllArticles() {
     const { data } = yield call(api.get, 'v1/article/all');
     yield put(setArticlesAction(data));
   } catch (error) {
-      console.log(error);
       yield put(getArticleFail());
   }
 };
@@ -43,7 +42,6 @@ function* getAllRecipes() {
     const { data } = yield call(api.get, `v1/recipe/all`);
     yield put(setRecipesAction(data));
   } catch (error) {
-      console.log(error);
   }
 };
 
@@ -53,7 +51,6 @@ function* deleteArticle({ payload }) {
     const { data } = yield call(api.get, 'v1/article/all');
     yield put(setArticlesAction(data));
   } catch (error) {
-      console.log(error);
   }
 };
 
@@ -63,7 +60,6 @@ function* deleteRecipe({ payload }) {
     const { data } = yield call(api.get, `v1/recipe/all`);
     yield put(setRecipesAction(data));
   } catch (error) {
-      console.log(error);
   }
 };
 
@@ -72,17 +68,18 @@ function* getAllCategories() {
     const { data } = yield call(api.get, 'v1/category/all');
     yield put(setCategoriesAction(data));
   } catch (error) {
-    console.log(error);
   }
 }
 
 function* createCategory({payload}) {
   try {
-    yield call(api.post, `v1/category/create`,{'title': `${payload}`});
+    yield call(api.post, `v1/category/create`,{
+      'title': `${payload.categoryTitle}`,
+      'parentId': `${payload.categoryParentId}`
+    });
     const { data } = yield call(api.get, 'v1/category/all');
     yield put(setCategoriesAction(data));
   } catch (error){
-      console.log(error);
   }
 }
 
@@ -92,7 +89,6 @@ function* deleteCategory({payload}) {
     const { data } = yield call(api.get, 'v1/category/all');
     yield put(setCategoriesAction(data));
   }catch (error) {
-    console.log(error);
   }
 }
 
@@ -106,7 +102,6 @@ function* createRecipe({payload}) {
   const { data } = yield call(api.get, 'v1/recipe/all');
   yield put(setRecipesAction(data));
   }catch (error) {
-    console.log(error)
   }
 };
 
@@ -121,7 +116,6 @@ function* createArticle({payload}) {
     const { data } = yield call(api.get, 'v1/article/all');
     yield put(setArticlesAction(data));
   }catch (error){
-    console.log(error);
   }
 }
 
@@ -129,9 +123,7 @@ function* getRecipesByCategory({payload}) {
   try {
     const { data } = yield call(api.get, `v1/recipe/byCategory/${payload}`);
     yield put(setRecipesAction(data));
-    console.log(data);
   }catch (error){
-    console.log(error);
   }
 }
 
@@ -140,7 +132,6 @@ function* getArticlesByCategory({payload}) {
     const { data } = yield call(api.get, `v1/article/byCategory/${payload}`);
     yield put(setArticlesAction(data));
   }catch (error) {
-    console.log(error);
   }
 }
 
@@ -149,7 +140,6 @@ function* getChildCategories({payload}) {
     const { data } = yield call(api.get, `v1/category/categoryList/${payload}`);
     yield put(setChildrenOfCategoryAction(data));
   }catch (error){
-    console.log(error)
   }
 }
 
@@ -157,9 +147,7 @@ function* getCatChild({payload}) {
   try {
     const { data } = yield call(api.get, `v1/category/categoryList/${payload}`);
     yield put(setCatChildAction(data));
-    console.log(data);
   }catch (error) {
-    console.log(error);
   }
 };
 

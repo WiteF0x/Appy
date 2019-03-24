@@ -12,9 +12,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     containerView: {
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'center',
+        flex: 1,    
         alignItems: 'center',
     },
     screenTitle: {

@@ -14,6 +14,8 @@ const CategoryList = props => {
                 data={categories}
                 renderItem={(info) => (
                     <CategoryListItem
+                        startFunc={props.startFunc}
+                        takeCategory={props.takeCategory}
                         goToFull={props.goToFull}
                         selectItem={props.selectItem}
                         categoryId={info.item._id}

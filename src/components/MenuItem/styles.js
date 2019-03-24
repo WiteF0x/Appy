@@ -18,6 +18,9 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#fff',
         backgroundColor:'#68a0cf',
+        color: 'black',
+        fontStyle: 'normal',
+        fontWeight: '600',
     },
     icon: {
         marginLeft: scale(4),

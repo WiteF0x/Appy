@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
-    TouchableOpacity,
 } from 'react-native';
 
 import CategoryList from '../../components/TrueCategoryList/CategoryList';
@@ -25,6 +24,7 @@ class CreateArticle extends Component {
             idToDelete: id,
         });
     };
+    
     closeModal = () => this.setState({ModalVisible: false});
 
     render() {
@@ -37,10 +37,8 @@ class CreateArticle extends Component {
                     />
                     <Header goBack={this.props.goToAdmin}/>
                     <Text style={styles.screenTitle}>Create Article</Text>
-                    <ArticleInput />
-                    <CategoryList 
+                    <ArticleInput 
                         categories={this.props.categories}
-                        selectItem={this.selectItem}    
                     />
                 </View>
         );
