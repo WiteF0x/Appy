@@ -1,7 +1,5 @@
 import React from 'react';
-import { 
-    FlatList,
-} from 'react-native';
+import { FlatList } from 'react-native';
 
 import SmallCategoryItem from '../SmallCategoryItem/SmallCategoryItem';
 

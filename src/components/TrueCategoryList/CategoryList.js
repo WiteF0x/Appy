@@ -2,6 +2,7 @@ import React from 'react';
 import { FlatList } from 'react-native';
 
 import CategoryListItem from '../TrueCategoryListItem/CategoryListItem';
+
 import styles from './styles';
 
 const CategoryList = props => {

@@ -9,7 +9,6 @@ import CategoryInput from '../../components/CategoryInput/CategoryInput';
 import CategoryDeleteModal from '../../components/CategoryDeleteModal/CategoryDeleteModal';
 import Header from '../../components/BackHeader/backHeader';
 
-
 import styles from './style';
 
 class CreateCategory extends Component {

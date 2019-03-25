@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { 
     View,
     Text,
@@ -10,9 +9,7 @@ import styles from './styles';
 
 const SelectListItem = (props) => (
     <View >
-      <TouchableOpacity onPress={()=>{
-          props.selectItem(props.categoryId,props.categoryTitle);
-      }}>
+      <TouchableOpacity onPress={()=>props.selectItem(props.categoryId,props.categoryTitle)}>
           <Text style={styles.title}>{props.categoryTitle}</Text>
       </TouchableOpacity>
     </View>

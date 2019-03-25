@@ -9,7 +9,6 @@ import { connect } from 'react-redux';
   state => ({categories: state.categories.categories}),
   ({onGetCategories: getCategoriesAction})
 )
-
 class CreateArticleScreen extends Component {
     componentDidMount() {
         this.props.onGetCategories();

@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
-import CreateRecipe from './CreateRecipe';
+
+import {connect} from 'react-redux';
 
 import { getCategoriesAction } from '../../store/actions';
 
-import {connect} from 'react-redux';
+import CreateRecipe from './CreateRecipe';
 
 @connect(
   state => ({categories: state.categories.categories}),
   ({onGetCategories: getCategoriesAction})
 )
-
 class CreateRecipeScreen extends Component {
     componentDidMount() {
         this.props.onGetCategories();
     };
+    
     goToAdmin = () => this.props.navigation.navigate('MainAdmin');
 
     render() {

@@ -1,6 +1,6 @@
 import { createReducer } from 'redux-act';
 
-import { setArticlesAction, setCategoriesAction, setRecipesAction, setChildrenOfCategoryAction } from '../actions';
+import { setArticlesAction } from '../actions';
 
 const initialState = {
     articles: [],

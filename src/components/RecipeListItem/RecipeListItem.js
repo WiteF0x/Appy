@@ -4,9 +4,10 @@ import {
     Text,
     TouchableOpacity
 } from 'react-native';
-import styles from './style';
 
 import Icon from 'react-native-vector-icons/Ionicons';
+
+import styles from './style';
 
 const RecipeslistItem = (props) => (
         <View style={styles.listItem} >

@@ -21,7 +21,7 @@ class Article extends Component {
       visibleContent: false,
 
       SelectVisible: false,
-      currentCategoryName: '',
+      currentCategoryName: 'All',
       category: '',
     };
 
@@ -62,7 +62,7 @@ class Article extends Component {
                   <TouchableOpacity 
                 onPress={()=>{
                   this.props.onGetArticles();
-                  this.setState({currentCategoryName: ''});
+                  this.setState({currentCategoryName: 'All'});
                 }}>
                 <Icon 
                   name='ios-refresh' 

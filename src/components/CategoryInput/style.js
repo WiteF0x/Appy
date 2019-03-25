@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     myAddButton: {
-        marginLeft: scale(100),
+        marginLeft: scale(50),
     },
     buttext: {
         fontSize: scale(14),
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         marginRight: scale(5),
     },
     category: {
-        width: scale(100),
+        width: scale(150),
         marginRight: scale(3),
         marginBottom: scale(5),
     },

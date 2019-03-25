@@ -12,11 +12,11 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import { connect } from 'react-redux'; 
 
-import styles from './style';
-
 import { createRecipeAction } from '../../store/actions';
 
 import MyModal from '../CategorySelectModal/CategorySelectModal';
+
+import styles from './style';
 
 @connect(
   null,

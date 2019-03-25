@@ -2,12 +2,12 @@ import React from 'react';
 import { FlatList } from 'react-native';
 
 import SelectListItem from '../SelectListItem/SelectListItem';
+
 import styles from './style';
 
 const SelectList = props => {
 
     const { categories } = props;
-    console.log('__________SelectList');
     return (    
             <FlatList 
                 style = {styles.listContainer}

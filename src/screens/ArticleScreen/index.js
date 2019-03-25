@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Article from './Article';
 
 import {connect} from 'react-redux';
 
@@ -7,6 +6,8 @@ import {
     getArticlesAction,
     getCategoriesAction,
 } from '../../store/actions';
+
+import Article from './Article';
 
 @connect(
   state => ({

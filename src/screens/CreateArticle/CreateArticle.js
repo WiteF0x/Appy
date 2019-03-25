@@ -4,7 +4,6 @@ import {
     Text,
 } from 'react-native';
 
-import CategoryList from '../../components/TrueCategoryList/CategoryList';
 import ArticleInput from '../../components/ArticleInput/ArticleInput';
 import CategoryDeleteModal from '../../components/CategoryDeleteModal/CategoryDeleteModal';
 

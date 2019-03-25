@@ -18,7 +18,6 @@ import {
     onGetRecipes: getRecipesAction,
   })
 )
-
 class Recipes extends Component { 
   componentDidMount() {
     this.props.onGetCategories();

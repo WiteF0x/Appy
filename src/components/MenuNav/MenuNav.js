@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import { FlatList, View, Text } from "react-native";
+import { FlatList, View } from "react-native";
 
 import MenulistItem from '../MenuItem/MenuItem';
 

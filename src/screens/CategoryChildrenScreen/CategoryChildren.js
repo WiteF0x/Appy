@@ -12,6 +12,7 @@ import MenuNav from '../../components/MenuNav/MenuNav';
 import deletePartMenuAction from '../../store/actions';
 
 import styles from './style';
+
 @connect(
     state => ({newmenu:state.menu}),
     ({onDeletePartMenu: deletePartMenuAction})

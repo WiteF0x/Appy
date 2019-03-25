@@ -5,44 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbf2b614-b5bd-478f-9714-da18931ad880" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.eslintrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/ArticleDeleteModal/ArticleDeleteModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/ArticleDeleteModal/ArticleDeleteModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/ArticleInput/ArticleInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/ArticleInput/ArticleInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/ArticleInput/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/ArticleInput/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/BackHeader/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/BackHeader/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/CategoryDeleteModal/CategoryDeleteModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/CategoryDeleteModal/CategoryDeleteModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/CategoryInput/CategoryInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/CategoryInput/CategoryInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/CategoryInput/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/CategoryInput/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/CategoryListItem/CategoryListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/CategoryListItem/CategoryListItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/ChildrenList/CategoryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/ChildrenList/CategoryList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/ChildrenList/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/ChildrenList/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/ChildrenListItem/ChildrenListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/ChildrenListItem/ChildrenListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/ChildrenListItem/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/ChildrenListItem/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/RecipeCatSmallItem/SmallCategoryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeCatSmallItem/SmallCategoryItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/RecipeCatSmallItem/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeCatSmallItem/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/RecipeCatSmallList/SmallCategoryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeCatSmallList/SmallCategoryList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/RecipeCatSmallList/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeCatSmallList/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/RecipeDeleteModal/RecipeDeleteModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeDeleteModal/RecipeDeleteModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/RecipeDeleteModal/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeDeleteModal/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/RecipeInput/RecipeInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeInput/RecipeInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/RecipeInput/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeInput/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/RecipeList/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeList/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/RecipeListItem/RecipeListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeListItem/RecipeListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/RecipeListItem/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/RecipeListItem/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/SmallCategoryItem/SmallCategoryItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/SmallCategoryItem/SmallCategoryItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/SmallCategoryItem/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/SmallCategoryItem/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/SmallCategoryList/SmallCategoryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/SmallCategoryList/SmallCategoryList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/SmallCategoryList/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/SmallCategoryList/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/TrueCategoryList/CategoryList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/TrueCategoryList/CategoryList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/TrueCategoryList/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/TrueCategoryList/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/components/TrueCategoryListItem/CategoryListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/TrueCategoryListItem/CategoryListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/TrueCategoryListItem/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/TrueCategoryListItem/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/navigation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/navigation/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/AdminScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/AdminScreen/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/ArticleScreen/Article.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/ArticleScreen/Article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/ArticleScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/ArticleScreen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/ArticleScreen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/ArticleScreen/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/CategoryChildrenScreen/CategoryChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CategoryChildrenScreen/CategoryChildren.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/CategoryChildrenScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CategoryChildrenScreen/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/CreateArticle/CreateArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CreateArticle/CreateArticle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/CreateArticle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CreateArticle/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/CreateArticle/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CreateArticle/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/CreateCategory/CreateCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CreateCategory/CreateCategory.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/CreateCategory/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CreateCategory/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/CreateRecipe/CreateRecipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CreateRecipe/CreateRecipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/CreateRecipe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CreateRecipe/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/CreateRecipe/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/CreateRecipe/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/FullArticleScreen/FullArticleScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/FullArticleScreen/FullArticleScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/FullArticleScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/FullArticleScreen/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/FullArticleScreen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/FullArticleScreen/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/LoginScreen/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/LoginScreen/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/LoginScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/LoginScreen/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/RecipesScreen/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/RecipesScreen/Recipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/RecipesScreen/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/RecipesScreen/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/screens/RecipesScreen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/RecipesScreen/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/store/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/store/actions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/store/reducers/articleReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/store/reducers/articleReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/store/sagas/articleSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/store/sagas/articleSaga.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
@@ -93,14 +114,15 @@
     <session id="-342557193">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="4" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -122,8 +144,8 @@
     <panes>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">

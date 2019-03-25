@@ -3,11 +3,9 @@ import {
     Modal,
     View,
     Text,
-    TouchableOpacity,
 } from 'react-native';
 
 import ArticleCatSmallList from '../SmallCategoryList/SmallCategoryList';
-
 
 import styles from './style';
 

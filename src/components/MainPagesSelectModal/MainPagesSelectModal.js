@@ -7,7 +7,6 @@ import {
 
 import RecipeCatSmallList from '../../components/RecipeCatSmallList/SmallCategoryList';
 
-
 import styles from './styles';
 
 class SelectModal extends Component{

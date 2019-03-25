@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
       fontSize: scale(24),
       color: 'orange',
   },
-
   categoryConteiner: {
     flexDirection: 'row',
     width: '100%',

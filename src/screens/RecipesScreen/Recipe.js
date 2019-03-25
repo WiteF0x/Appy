@@ -6,14 +6,13 @@ import {
   TouchableOpacity,
  } from 'react-native';
 
-import styles from './styles';
-
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import RecipeList from '../../components/RecipeList/RecipeList';
 import RecipeDeleteModal from '../../components/RecipeDeleteModal/RecipeDeleteModal';
 import SelectCategoryModal from '../../components/MainPagesSelectModal/MainPagesSelectModal';
 
+import styles from './styles';
 
 class Recipe extends Component {
   state = {
@@ -21,7 +20,7 @@ class Recipe extends Component {
     idToDelete: '',
 
     SelectVisible: false,
-    currentCategoryName: '',
+    currentCategoryName: 'All',
     category: '',
   };
 
@@ -61,7 +60,7 @@ class Recipe extends Component {
               <TouchableOpacity 
                 onPress={()=>{
                   this.props.onGetRecipes();
-                  this.setState({currentCategoryName: ''});
+                  this.setState({currentCategoryName: 'All'});
                 }}>
                 <Icon 
                   name='ios-refresh' 

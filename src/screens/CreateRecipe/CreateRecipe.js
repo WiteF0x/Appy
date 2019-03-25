@@ -24,16 +24,13 @@ class Admin extends Component {
         });
     };
 
-    startFunc() {
-
-    }
-
     selectItem = (id) => {
         this.setState({
             ModalVisible: true,
             idToDelete: id,
         });
     };
+    
     closeModal = () => this.setState({ModalVisible: false});
 
     render() {

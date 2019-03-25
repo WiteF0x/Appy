@@ -6,24 +6,23 @@ import {
     TouchableOpacity
 } from 'react-native';
 
+import Icon from 'react-native-vector-icons/Ionicons';
+
 import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux'; 
 
-import styles from './style';
-
 import { getCreateCategoryAction } from '../../store/actions';
 
-import MyModal from '../CategorySelectModal/CategorySelectModal';
+import MyModal from '../CategoryCreateSelectModal/CategoryCreateSelectModal';
 
-import Icon from 'react-native-vector-icons/Ionicons';
+import styles from './style';
 
 
 @connect(
   null,
   ({onCreateCategory: getCreateCategoryAction}),
 )
-
 class CategoryInput extends React.Component {
   static propTypes = {
     categoryinput: PropTypes.string.isRequired,
@@ -33,16 +32,14 @@ class CategoryInput extends React.Component {
   state = {
     categoryInput: '',
     isDisable: true,
-  
     parentCategory: null,
-    currentCategoryName: '',
+    currentCategoryName: 'none',
     ModVis: false,
     icon: 'ios-add',
   }
 
   onInputChange = categoryInput => {
           this.setState({ categoryInput });
-
           this.setState({isDisable: false});
   };
 
@@ -59,7 +56,7 @@ class CategoryInput extends React.Component {
     this.props.onCreateCategory(category);
     this.setState({
       categoryInput: '',
-      currentCategoryName: '',
+      currentCategoryName: 'none',
       isDisable: true,
     });
   };
@@ -102,7 +99,7 @@ class CategoryInput extends React.Component {
             <Icon name={this.state.icon} color='blue' size={20}/>
           </TouchableOpacity>
           <Text style={styles.category}>
-            Category:  
+            Parent category:  
               <Text style={styles.categoryColor}>{this.state.currentCategoryName}</Text>
           </Text>
           <TouchableOpacity

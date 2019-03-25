@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CreateCategory from './CreateCategory';
 
 import {connect} from 'react-redux';
 
@@ -8,6 +7,8 @@ import {
   cleanMenuAction,
 } from '../../store/actions';
 
+import CreateCategory from './CreateCategory';
+
 @connect(
   state => ({categories: state.categories.categories}),
   ({
@@ -15,7 +16,6 @@ import {
     onCleanMenu: cleanMenuAction,
   })
 )
-
 class CreateCategoryScreen extends Component {
     componentDidMount() {
         this.props.onGetCategories();

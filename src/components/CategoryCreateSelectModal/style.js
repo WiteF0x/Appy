@@ -3,21 +3,24 @@ import { scale } from 'react-native-size-matters';
 
 
 const styles = StyleSheet.create({
+    modalContainer: {
+        height: '100%',
+    },
     container: {
         width: "100%",
+        marginTop: scale(200),
+        marginBottom: 5,
+        marginLeft: "20%",
+        marginRight: "15%",
+        padding: 10,
         flexDirection: "row",
         alignItems: "center",
     },
-    icon: {
-        marginTop: scale(12),
-        marginLeft: scale(15),
-        marginRight: scale(10),
-    },
     text: {
-        marginTop: scale(10),
-        fontSize: scale(16),
-        fontWeight: 'bold',
         textAlign: 'center',
+        fontSize: scale(18),
+        color: 'black',
+        margin: scale(5),
     },
 });
 

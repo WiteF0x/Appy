@@ -1,8 +1,9 @@
 import React from 'react';
 
+import { connect } from 'react-redux';
+
 import { createStackNavigator } from 'react-navigation';
 import { createNavigationReducer, reduxifyNavigator } from 'react-navigation-redux-helpers';
-import { connect } from 'react-redux';
 import { createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 
 import Icon from 'react-native-vector-icons/Ionicons';

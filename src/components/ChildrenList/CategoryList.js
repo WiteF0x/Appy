@@ -2,6 +2,7 @@ import React from 'react';
 import { FlatList } from 'react-native';
 
 import ChildrenListItem from '../ChildrenListItem/ChildrenListItem';
+
 import styles from './style';
 
 const ChildrenList = props => {

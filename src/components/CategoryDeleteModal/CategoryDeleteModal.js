@@ -7,11 +7,12 @@ import {
 } from 'react-native'
 
 import Icon from 'react-native-vector-icons/Ionicons'
-import styles from './style'
 
 import { connect } from 'react-redux';
 
 import { deleteCategoryAction } from '../../store/actions';
+
+import styles from './style';
 
 const DeleteModal = props => {
     let modalContent = null;

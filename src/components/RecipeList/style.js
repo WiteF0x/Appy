@@ -4,7 +4,7 @@ import { scale } from 'react-native-size-matters';
 const styles = StyleSheet.create({
     listContainer: {
         width: "100%",
-        marginBottom: scale(70),
+        marginBottom: scale(68),
     },
 });
 
