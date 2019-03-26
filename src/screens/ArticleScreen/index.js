@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
-import { 
-    getArticlesAction,
-    getCategoriesAction,
+import {
+  getArticlesAction,
+  getCategoriesAction,
 } from '../../store/actions';
 
 import Article from './Article';
@@ -17,30 +17,30 @@ import Article from './Article';
   ({
     onGetCategories: getCategoriesAction,
     onGetArticles: getArticlesAction,
-  })
+  }),
 )
 
 class ArticleScreen extends Component {
-    componentDidMount() {
-        this.props.onGetCategories();
-        this.props.onGetArticles();
-    }
+  componentDidMount() {
+    this.props.onGetCategories();
+    this.props.onGetArticles();
+  }
 
-    goToFull = (title,text,description) => this.props.navigation.navigate('FullArticle', {
-      title: title,
-      text: text,
-      description: description,
+    goToFull = (title, text, description) => this.props.navigation.navigate('FullArticle', {
+      title,
+      text,
+      description,
     });
 
     render() {
-        return(
+      return (
             <Article
-              goToFull={this.goToFull} 
+              goToFull={this.goToFull}
               articles={this.props.articles}
               categories={this.props.categories}
               onGetArticles={this.props.onGetArticles}
             />
-        );
+      );
     }
 }
 

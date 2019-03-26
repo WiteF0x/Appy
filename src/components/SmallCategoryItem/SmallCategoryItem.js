@@ -1,20 +1,20 @@
-import React from 'react'
-import { 
+import React from 'react';
+import {
   View,
   Text,
-  TouchableOpacity
+  TouchableOpacity,
 } from 'react-native';
 
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 import { getArticlesByCategoryAction } from '../../store/actions';
 
 import styles from './style';
 
-const SmallCategoryItem = (props) => (
+const SmallCategoryItem = props => (
     <View style={styles.listItem} >
-      <TouchableOpacity 
-        onPress={()=>{
+      <TouchableOpacity
+        onPress={() => {
           props.onGetArticlesByCategory(props.categoryId);
           props.selectCategory(props.categoryId, props.categoryTitle);
           props.closeSelectModal();
@@ -26,7 +26,7 @@ const SmallCategoryItem = (props) => (
 );
 
 const mapDispatchToProps = dispatch => ({
-  onGetArticlesByCategory: (id) => dispatch(getArticlesByCategoryAction(id)),
+  onGetArticlesByCategory: id => dispatch(getArticlesByCategoryAction(id)),
 });
-  
-export default connect(null, mapDispatchToProps) (SmallCategoryItem);
+
+export default connect(null, mapDispatchToProps)(SmallCategoryItem);

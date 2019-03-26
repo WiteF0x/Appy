@@ -1,16 +1,16 @@
 import React from 'react';
-import { 
-    View, 
-    Text, 
-    TextInput,
-    TouchableOpacity
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import PropTypes from 'prop-types';
 
-import { connect } from 'react-redux'; 
+import { connect } from 'react-redux';
 
 import { getCreateCategoryAction } from '../../store/actions';
 
@@ -21,14 +21,14 @@ import styles from './style';
 
 @connect(
   null,
-  ({onCreateCategory: getCreateCategoryAction}),
+  ({ onCreateCategory: getCreateCategoryAction }),
 )
 class CategoryInput extends React.Component {
   static propTypes = {
     categoryinput: PropTypes.string.isRequired,
     onPress: PropTypes.func.isRequired,
   };
-  
+
   state = {
     categoryInput: '',
     isDisable: true,
@@ -38,20 +38,20 @@ class CategoryInput extends React.Component {
     icon: 'ios-add',
   }
 
-  onInputChange = categoryInput => {
-          this.setState({ categoryInput });
-          this.setState({isDisable: false});
+  onInputChange = (categoryInput) => {
+    this.setState({ categoryInput });
+    this.setState({ isDisable: false });
   };
 
   onSubmitHandle = () => {
     const { categoryInput } = this.state;
 
-    if (categoryInput.trim() === "") {
+    if (categoryInput.trim() === '') {
       return;
     }
     const category = {
-      categoryTitle : categoryInput,
-      categoryParentId : this.state.parentCategory,
+      categoryTitle: categoryInput,
+      categoryParentId: this.state.parentCategory,
     };
     this.props.onCreateCategory(category);
     this.setState({
@@ -61,12 +61,12 @@ class CategoryInput extends React.Component {
     });
   };
 
-  closeMy = () => this.setState({ModVis: false});
+  closeMy = () => this.setState({ ModVis: false });
 
   openModal = () => {
-    if(this.state.ModVis === false){
-      this.setState({ModVis: true})
-    } else{
+    if (this.state.ModVis === false) {
+      this.setState({ ModVis: true })
+    } else {
       this.closeMy();
     };
   };
@@ -83,40 +83,40 @@ class CategoryInput extends React.Component {
     const { categoryInput } = this.state;
 
     return (
-      <View style = {styles.inputContainer}>
+      <View style={styles.inputContainer}>
         <TextInput
-          key={132} 
+          key={132}
           placeholder='Type a category'
-          value={categoryInput} 
+          value={categoryInput}
           onChangeText={this.onInputChange}
           style={styles.categoryInput}
-        />     
+        />
         <View style={styles.parentContainer}>
-          <TouchableOpacity 
+          <TouchableOpacity
             style={styles.open}
-            onPress={()=>this.openModal()}
+            onPress={() => this.openModal()}
           >
-            <Icon name={this.state.icon} color='blue' size={20}/>
+            <Icon name={this.state.icon} color='blue' size={20} />
           </TouchableOpacity>
           <Text style={styles.category}>
-            Parent category:  
+            Parent category:
               <Text style={styles.categoryColor}>{this.state.currentCategoryName}</Text>
           </Text>
           <TouchableOpacity
-          style={styles.myAddButton} 
-          onPress={this.onSubmitHandle}
-          disabled={this.state.isDisable}
+            style={styles.myAddButton}
+            onPress={this.onSubmitHandle}
+            disabled={this.state.isDisable}
           >
             <Text style={styles.buttext}>
               Add
             </Text>
           </TouchableOpacity>
         </View>
-        <MyModal 
-          Mvis={this.state.ModVis}       
+        <MyModal
+          Mvis={this.state.ModVis}
           closeMy={this.closeMy}
           selectItem={this.selectItem}
-          categories={this.props.categories} 
+          categories={this.props.categories}
         />
       </View>
     );

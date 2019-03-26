@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    listContainer: {
+  listContainer: {
 
-    },
+  },
 });
 
 export default styles;

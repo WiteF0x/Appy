@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {
-    View,
-    Text,
-    ImageBackground,
-    TouchableOpacity,
+  View,
+  Text,
+  ImageBackground,
+  TouchableOpacity,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -14,7 +14,7 @@ import ArticleSelectCategoryModal from '../../components/ArticleMainPagesSelectM
 
 import styles from './styles';
 
-class Article extends Component {  
+class Article extends Component {
     state = {
       ModalVisible: false,
       idToDelete: '',
@@ -29,7 +29,7 @@ class Article extends Component {
       this.setState({
         ModalVisible: true,
         idToDelete: id,
-      }, () => {console.log(`this state: ${this.state.idToDelete}`)});
+      });
     };
 
     selectCategory = (id, name) => {
@@ -37,20 +37,20 @@ class Article extends Component {
         ModVis: false,
         category: id,
         currentCategoryName: name,
-      })
+      });
     };
 
-    openSelectModal = () => this.setState({SelectVisible: true});
+    openSelectModal = () => this.setState({ SelectVisible: true });
 
-    closeModal = () => this.setState({ModalVisible: false});
+    closeModal = () => this.setState({ ModalVisible: false });
 
-    closeSelectModal = () => this.setState({SelectVisible: false});
+    closeSelectModal = () => this.setState({ SelectVisible: false });
 
     render() {
-        return (
+      return (
             <ImageBackground source={require('../../assets/sweets2.jpg')} style={styles.background} >
                 <View style={styles.container}>
-                  <ArticleDeleteModal 
+                  <ArticleDeleteModal
                     Mvisible={this.state.ModalVisible}
                     closeModal={this.closeModal}
                     idToDelete={this.state.idToDelete}
@@ -59,16 +59,16 @@ class Article extends Component {
                       Articles
                     </Text>
                   <View style={styles.categoryConteiner}>
-                  <TouchableOpacity 
-                onPress={()=>{
+                  <TouchableOpacity
+                onPress={() => {
                   this.props.onGetArticles();
-                  this.setState({currentCategoryName: 'All'});
+                  this.setState({ currentCategoryName: 'All' });
                 }}>
-                <Icon 
-                  name='ios-refresh' 
-                  color='white' 
+                <Icon
+                  name='ios-refresh'
+                  color='white'
                   size={18}
-                  style={styles.icon} 
+                  style={styles.icon}
                 />
               </TouchableOpacity>
               <Icon
@@ -77,9 +77,9 @@ class Article extends Component {
                   size={15}
                   style={styles.iconfunnel}
                 />
-                  <TouchableOpacity 
-                    onPress={()=>this.openSelectModal()}
-                    style={styles.touch}  
+                  <TouchableOpacity
+                    onPress={() => this.openSelectModal()}
+                    style={styles.touch}
                   >
                     <Text style={styles.categoryText}>Category: </Text>
                   </TouchableOpacity>
@@ -100,7 +100,7 @@ class Article extends Component {
                   />
                 </View>
             </ImageBackground>
-        );
+      );
     }
 }
 

@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { 
-    View, 
-    Text, 
-    TextInput,
-    TouchableOpacity
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
 } from 'react-native';
 
 import PropTypes from 'prop-types';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import { connect } from 'react-redux'; 
+import { connect } from 'react-redux';
 
 import { createRecipeAction } from '../../store/actions';
 
@@ -48,32 +48,33 @@ class RecipeInput extends Component {
       category: id,
       currentCategoryName: name,
     }, () => {
-      if(this.state.title.trim() != '' && this.state.text.trim() != '' && this.state.category.trim() != ''){
-        this.setState({isDisable: false})
-    }});
+      if (this.state.title.trim() != '' && this.state.text.trim() != '' && this.state.category.trim() != '') {
+        this.setState({ isDisable: false });
+      } 
+});
   };
 
-  closeMy = () => this.setState({ModVis: false});
+  closeMy = () => this.setState({ ModVis: false });
 
   openModal = () => {
-    if(this.state.ModVis === false){
-      this.setState({ModVis: true})
-    } else{
+    if (this.state.ModVis === false) {
+      this.setState({ ModVis: true });
+    } else {
       this.closeMy();
-    };
-  };
-
-  onTitleInputChange = title => {
-    this.setState({ title })
-    if(this.state.text.trim() != '' && this.state.category.trim() != ''){
-      this.setState({isDisable: false})
     }
   };
 
-  onTextInputChange = text => {
-    this.setState({ text })
-    if(this.state.title.trim() != '' && this.state.category.trim() != ''){
-      this.setState({isDisable: false})
+  onTitleInputChange = (title) => {
+    this.setState({ title });
+    if (this.state.text.trim() != '' && this.state.category.trim() != '') {
+      this.setState({ isDisable: false });
+    }
+  };
+
+  onTextInputChange = (text) => {
+    this.setState({ text });
+    if (this.state.title.trim() != '' && this.state.category.trim() != '') {
+      this.setState({ isDisable: false });
     }
   };
 
@@ -85,44 +86,44 @@ class RecipeInput extends Component {
       category: '',
       currentCategoryName: '',
       isDisable: true,
-    }); 
+    });
   }
 
   render() {
-    const { 
-        title,
-        text,
+    const {
+      title,
+      text,
     } = this.state;
 
     return (
       <View style = {styles.inputContainer1}>
-        <TextInput 
+        <TextInput
           key={1}
           placeholder='Type the title of recipe'
-          value={title} 
+          value={title}
           onChangeText={this.onTitleInputChange}
           style={styles.input}
-        /> 
+        />
         <TextInput
             key={2}
-            placeholder='Type the text of recipe' 
+            placeholder='Type the text of recipe'
             value={text}
             onChangeText={this.onTextInputChange}
             style={styles.input}
-        /> 
+        />
         <View style={styles.bottomLine}>
-          <TouchableOpacity 
+          <TouchableOpacity
             style={styles.open}
-            onPress={()=>this.openModal()}
+            onPress={() => this.openModal()}
           >
-            <Icon name={this.state.icon} color='blue' size={20}/>
+            <Icon name={this.state.icon} color='blue' size={20} />
           </TouchableOpacity>
           <Text style={styles.category}>
-            Category:  
+            Category:
               <Text style={styles.categoryColor}>{this.state.currentCategoryName}</Text>
           </Text>
           <TouchableOpacity
-            style={styles.myAddButton} 
+            style={styles.myAddButton}
             onPress={this.onAddHandle}
             disabled={this.state.isDisable}
           >
@@ -131,15 +132,15 @@ class RecipeInput extends Component {
             </Text>
           </TouchableOpacity>
         </View>
-        <MyModal 
-          Mvis={this.state.ModVis}       
+        <MyModal
+          Mvis={this.state.ModVis}
           closeMy={this.closeMy}
           selectItem={this.selectItem}
-          categories={this.props.categories} 
+          categories={this.props.categories}
         />
       </View>
     );
   }
-};
+}
 
 export default RecipeInput;

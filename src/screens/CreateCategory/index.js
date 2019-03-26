@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
-import { 
+import {
   getCategoriesAction,
   cleanMenuAction,
 } from '../../store/actions';
@@ -10,33 +10,33 @@ import {
 import CreateCategory from './CreateCategory';
 
 @connect(
-  state => ({categories: state.categories.categories}),
+  state => ({ categories: state.categories.categories }),
   ({
     onGetCategories: getCategoriesAction,
     onCleanMenu: cleanMenuAction,
-  })
+  }),
 )
 class CreateCategoryScreen extends Component {
-    componentDidMount() {
-        this.props.onGetCategories();
-        this.props.onCleanMenu();
-    };
+  componentDidMount() {
+    this.props.onGetCategories();
+    this.props.onCleanMenu();
+  }
     goToAdmin = () => this.props.navigation.navigate('MainAdmin');
 
-    goToFull = (title,id,children) => this.props.navigation.navigate('ChildCategories', {
-      title: title,
-      id: id,
-      children: children,
+    goToFull = (title, id, children) => this.props.navigation.navigate('ChildCategories', {
+      title,
+      id,
+      children,
     });
 
     render() {
-        return(
-            <CreateCategory 
+      return (
+            <CreateCategory
               categories={this.props.categories}
               goToAdmin={this.goToAdmin}
-              goToFull={this.goToFull}  
+              goToFull={this.goToFull}
             />
-        );
+      );
     }
 }
 

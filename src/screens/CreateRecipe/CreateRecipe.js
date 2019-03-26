@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
-    View,
-    Text,
+  View,
+  Text,
 } from 'react-native';
 
 import RecipeInput from '../../components/RecipeInput/RecipeInput';
@@ -13,42 +13,42 @@ import styles from './style';
 
 class Admin extends Component {
     state = {
-        ModalVisible: false,
-        idToDelete: null,
-        takeCategory: '',
+      ModalVisible: false,
+      idToDelete: null,
+      takeCategory: '',
     };
 
     takeCategory = (category) => {
-        this.setState({
-            takeCategory: category,
-        });
+      this.setState({
+        takeCategory: category,
+      });
     };
 
     selectItem = (id) => {
-        this.setState({
-            ModalVisible: true,
-            idToDelete: id,
-        });
+      this.setState({
+        ModalVisible: true,
+        idToDelete: id,
+      });
     };
-    
-    closeModal = () => this.setState({ModalVisible: false});
+
+    closeModal = () => this.setState({ ModalVisible: false });
 
     render() {
-        return(
+      return (
             <View style={[styles.container, styles.containerView]}>
                 <CategoryDeleteModal
                     Mvisible={this.state.ModalVisible}
                     closeModal={this.closeModal}
                     idToDelete={this.state.idToDelete}
                 />
-                <Header goBack={this.props.goToAdmin}/>
+                <Header goBack={this.props.goToAdmin} />
                 <Text style={styles.screenTitle}>Create Recipe</Text>
-                <RecipeInput 
+                <RecipeInput
                     takenCategory={this.state.takeCategory}
                     categories={this.props.categories}
                 />
             </View>
-        );
+      );
     }
 }
 

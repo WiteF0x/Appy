@@ -4,15 +4,14 @@ import { FlatList } from 'react-native';
 import CategoryListItem from '../CategoryListItem/CategoryListItem';
 import styles from './style';
 
-const CategoryList = props => {
+const CategoryList = (props) => {
+  const { categories } = props;
 
-    const { categories } = props;
-      
-    return (    
-            <FlatList 
+  return (
+            <FlatList
                 style = {styles.listContainer}
                 data={categories}
-                renderItem={(info) => (
+                renderItem={info => (
                     <CategoryListItem
                         goToFull={props.goToFull}
                         selectItem={props.selectItem}
@@ -20,10 +19,10 @@ const CategoryList = props => {
                         categoryTitle={info.item.title}
                         categoryChildren={info.item.children}
                     />
-                )} 
+                )}
             />
-    );
-}
+  );
+};
 
 export default CategoryList;
-    
+

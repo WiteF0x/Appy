@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
-import { 
+import {
   getChildrenOfCategoryAction,
   getCategoriesAction,
   getCatChildAction,
@@ -25,7 +25,7 @@ import Children from './CategoryChildren';
     onGetCatChild: getCatChildAction,
     onSetMenuItem: setMenuItemAction,
     onDeleteAfter: deletePartMenuAction,
-  })
+  }),
 )
 class CategoryChildren extends Component {
   state = {
@@ -36,66 +36,65 @@ class CategoryChildren extends Component {
     childmas: [],
     menu: [],
   };
-  
-    componentDidMount() {
-      this.setUpScreen();
-    };
 
-    goToFull2 = (title,id,children)=>{
-      currentTitle=null;
-      currentId=null;
-      currentChildren=null;
+  componentDidMount() {
+    this.setUpScreen();
+  }
+
+    goToFull2 = (title, id, children) => {
+      currentTitle = null;
+      currentId = null;
+      currentChildren = null;
 
       this.props.navigation.navigate('ChildCategories', {
-        title: title,
-        id: id,
-        children: children,
+        title,
+        id,
+        children,
       });
-      
+
       this.setState({
-          gotTitle: null, 
-          id: null,
-          children: null,
-          testobj: null,
-          childmas: null,
-      },() => {
+        gotTitle: null,
+        id: null,
+        children: null,
+        testobj: null,
+        childmas: null,
+      }, () => {
         this.setUpScreen();
-    });
-  };
+      });
+    };
 
-  setUpScreen() {
-    const currentTitle = this.props.navigation.getParam('title');
-    const currentId = this.props.navigation.getParam('id');
-    const currentChildren = this.props.navigation.getParam('children');
+    setUpScreen() {
+      const currentTitle = this.props.navigation.getParam('title');
+      const currentId = this.props.navigation.getParam('id');
+      const currentChildren = this.props.navigation.getParam('children');
 
-    this.props.onSetMenuItem({
-      title:currentTitle,
-      id:currentId,
-      children: currentChildren,
-    });
+      this.props.onSetMenuItem({
+        title: currentTitle,
+        id: currentId,
+        children: currentChildren,
+      });
 
-    this.setState({
-        gotTitle: currentTitle, 
+      this.setState({
+        gotTitle: currentTitle,
         id: currentId,
         children: currentChildren,
         testobj: this.props.allobj,
         childmas: [],
-    },() => {
-        for(var i=0; i<currentChildren.mymassiv.length;i++){
-          this.state.childmas.push(this.state.testobj[currentChildren.mymassiv[i]])
-      }
-    });
-
-  }
+      }, () => {
+        for (let i = 0; i < currentChildren.mymassiv.length; i++) {
+          this.state.childmas.push(this.state.testobj[currentChildren.mymassiv[i]]);
+        }
+      });
+    }
 
     render() {
-        return(
+      return (
           <Children
             onDeleteAfter={this.props.onDeleteAfter}
-            goToFull={this.goToFull2} 
+            goToFull={this.goToFull2}
             childmas={this.state.childmas}
           />
-        );
+      );
     }
 }
 

@@ -5,15 +5,14 @@ import CategoryListItem from '../TrueCategoryListItem/CategoryListItem';
 
 import styles from './styles';
 
-const CategoryList = props => {
+const CategoryList = (props) => {
+  const { categories } = props;
 
-    const { categories } = props;
-      
-    return (    
-            <FlatList 
+  return (
+            <FlatList
                 style = {styles.listContainer}
                 data={categories}
-                renderItem={(info) => (
+                renderItem={info => (
                     <CategoryListItem
                         startFunc={props.startFunc}
                         takeCategory={props.takeCategory}
@@ -22,10 +21,10 @@ const CategoryList = props => {
                         categoryId={info.item._id}
                         categoryTitle={info.item.title}
                     />
-                )} 
+                )}
             />
-    );
-}
+  );
+};
 
 export default CategoryList;
-    
+

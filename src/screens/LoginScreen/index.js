@@ -3,11 +3,11 @@ import LoginScreen from './Login';
 
 class Login extends Component {
     goToMain = () => this.props.navigation.navigate('MainContent');
-    
+
     render() {
-        return(
+      return (
             <LoginScreen goToMain={this.goToMain} />
-        );
+      );
     }
 }
 

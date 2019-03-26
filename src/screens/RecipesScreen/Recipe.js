@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
-import { 
+import React, { Component } from 'react';
+
+import {
   View,
   Text,
   ImageBackground,
   TouchableOpacity,
- } from 'react-native';
+} from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -30,26 +31,26 @@ class Recipe extends Component {
       idToDelete: id,
     });
   };
-  
+
   selectCategory = (id, name) => {
     this.setState({
       ModVis: false,
       category: id,
       currentCategoryName: name,
-    })
+    });
   };
 
-  openSelectModal = () => this.setState({SelectVisible: true});
+  openSelectModal = () => this.setState({ SelectVisible: true });
 
-  closeModal = () => this.setState({ModalVisible: false});
+  closeModal = () => this.setState({ ModalVisible: false });
 
-  closeSelectModal = () => this.setState({SelectVisible: false});
+  closeSelectModal = () => this.setState({ SelectVisible: false });
 
-  render(){
+  render() {
     return (
       <ImageBackground source={require('../../assets/sweets.jpg')} style={styles.background} >
         <View style={styles.container}>
-          <RecipeDeleteModal 
+          <RecipeDeleteModal
             Mvisible={this.state.ModalVisible}
             closeModal={this.closeModal}
             idToDelete={this.state.idToDelete}
@@ -57,16 +58,16 @@ class Recipe extends Component {
           <Text style={styles.screenTitle}>Recipes</Text>
 
           <View style={styles.categoryConteiner}>
-              <TouchableOpacity 
-                onPress={()=>{
+              <TouchableOpacity
+                onPress={() => {
                   this.props.onGetRecipes();
-                  this.setState({currentCategoryName: 'All'});
+                  this.setState({ currentCategoryName: 'All' });
                 }}>
-                <Icon 
-                  name='ios-refresh' 
-                  color='white' 
+                <Icon
+                  name='ios-refresh'
+                  color='white'
                   size={18}
-                  style={styles.icon} 
+                  style={styles.icon}
                 />
               </TouchableOpacity>
               <Icon
@@ -75,11 +76,11 @@ class Recipe extends Component {
                   size={15}
                   style={styles.iconfunnel}
                 />
-              <TouchableOpacity 
-                onPress={()=>this.openSelectModal()}
+              <TouchableOpacity
+                onPress={() => this.openSelectModal()}
                 style={styles.touch}
               >
-                <Text style={styles.categoryText}>Category: </Text> 
+                <Text style={styles.categoryText}>Category: </Text>
               </TouchableOpacity>
               <Text style={styles.currentCategory}>
                 {this.state.currentCategoryName}
@@ -92,8 +93,8 @@ class Recipe extends Component {
               closeSelectModal={this.closeSelectModal}
               selectCategory={this.selectCategory}
             />
-            <RecipeList 
-              recipes={this.props.recipes} 
+            <RecipeList
+              recipes={this.props.recipes}
               selectItem={this.selectItem}
               />
         </View>

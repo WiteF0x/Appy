@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
-    View,
-    Text,
+  View,
+  Text,
 } from 'react-native';
 
 import ArticleInput from '../../components/ArticleInput/ArticleInput';
@@ -13,34 +13,34 @@ import styles from './style';
 
 class CreateArticle extends Component {
     state = {
-        ModalVisible: false,
-        idToDelete: null,
+      ModalVisible: false,
+      idToDelete: null,
     };
 
     selectItem = (id) => {
-        this.setState({
-            ModalVisible: true,
-            idToDelete: id,
-        });
+      this.setState({
+        ModalVisible: true,
+        idToDelete: id,
+      });
     };
-    
-    closeModal = () => this.setState({ModalVisible: false});
+
+    closeModal = () => this.setState({ ModalVisible: false });
 
     render() {
-        return(
+      return (
                 <View style={[styles.container, styles.containerView]}>
                     <CategoryDeleteModal
                         Mvisible={this.state.ModalVisible}
                         closeModal={this.closeModal}
                         idToDelete={this.state.idToDelete}
                     />
-                    <Header goBack={this.props.goToAdmin}/>
+                    <Header goBack={this.props.goToAdmin} />
                     <Text style={styles.screenTitle}>Create Article</Text>
-                    <ArticleInput 
+                    <ArticleInput
                         categories={this.props.categories}
                     />
                 </View>
-        );
+      );
     }
 }
 

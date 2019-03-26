@@ -1,21 +1,21 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 import { scale } from 'react-native-size-matters';
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
+    width: '100%',
   },
   background: {
     width: '100%',
     height: '100%',
   },
   screenTitle: {
-      textAlign: 'center',
-      marginTop: scale(5),
-      marginBottom: scale(10),
-      fontWeight: "bold",
-      fontSize: scale(24),
-      color: 'orange',
+    textAlign: 'center',
+    marginTop: scale(5),
+    marginBottom: scale(10),
+    fontWeight: 'bold',
+    fontSize: scale(24),
+    color: 'orange',
   },
   categoryConteiner: {
     flexDirection: 'row',
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   },
   iconfunnel: {
     marginTop: scale(2),
-  }
+  },
 });
 
 export default styles;

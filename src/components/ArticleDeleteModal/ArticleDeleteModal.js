@@ -14,9 +14,8 @@ import { getDeleteArticleAction } from '../../store/actions';
 
 import styles from './styles';
 
-const DeleteModal = props => {
+const DeleteModal = (props) => {
   let modalContent = null;
-  console.log(`___________-${props.idToDelete}`);
   if (props.Mvisible) {
     modalContent = (
             <View style={styles.textCont}>
@@ -52,7 +51,7 @@ const DeleteModal = props => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  onDeleteArticle: (id) => dispatch(getDeleteArticleAction(id)),
+  onDeleteArticle: id => dispatch(getDeleteArticleAction(id)),
 });
 
 export default connect(null, mapDispatchToProps)(DeleteModal);

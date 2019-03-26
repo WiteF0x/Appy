@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import { 
-    Modal,
-    View,
-    Text,
+import {
+  Modal,
+  View,
+  Text,
 } from 'react-native';
 
-import RecipeCatSmallList from '../../components/RecipeCatSmallList/SmallCategoryList';
+import RecipeCatSmallList from "../RecipeCatSmallList/SmallCategoryList";
 
 import styles from './styles';
 
-class SelectModal extends Component{
-
-    render() {
-        return (
+class SelectModal extends Component {
+  render() {
+    return (
         <Modal visible={this.props.Mvis} animationType="fade" transparent={false}>
             <View style={styles.modalContainer}>
                 <Text style={styles.text}>Please, select category you need</Text>
@@ -23,8 +22,8 @@ class SelectModal extends Component{
                 />
             </View>
         </Modal>
-        );  
-    };
+    );
+  }
 };
 
 export default SelectModal;
