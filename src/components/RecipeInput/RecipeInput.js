@@ -50,8 +50,8 @@ class RecipeInput extends Component {
     }, () => {
       if (this.state.title.trim() != '' && this.state.text.trim() != '' && this.state.category.trim() != '') {
         this.setState({ isDisable: false });
-      } 
-});
+      }
+    });
   };
 
   closeMy = () => this.setState({ ModVis: false });

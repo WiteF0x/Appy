@@ -17,7 +17,13 @@ class ArticlelistItem extends React.Component {
   render() {
     return (
          <View style={styles.listItem} >
-            <TouchableOpacity onPress={() => this.props.goToFull(this.props.articleTitle, this.props.articleText, this.props.articleDescription)}>
+            <TouchableOpacity onPress={() => {
+              this.props.goToFull(
+                this.props.articleTitle,
+                this.props.articleText,
+                this.props.articleDescription,
+              );
+            }}>
               <Text style={styles.title}>{this.props.articleTitle}</Text>
               <Text style={styles.text}>{this.props.articleText}</Text>
             </TouchableOpacity>

@@ -26,7 +26,11 @@ const DeleteModal = (props) => {
   }
 
   return (
-    <Modal onRequestClose={props.onModalClosed} visible={props.Mvisible} animationType="slide">
+    <Modal
+      onRequestClose={props.onModalClosed}
+      visible={props.Mvisible}
+      animationType="slide"
+    >
         <View style={styles.modalContainer}>
             {modalContent}
                 <View style={styles.container}>
@@ -37,13 +41,21 @@ const DeleteModal = (props) => {
                           props.closeModal();
                         }}
                     >
-                        <Icon size={68} name="ios-checkmark" color="green" />
+                        <Icon
+                          size={68}
+                          name="ios-checkmark"
+                          color="green"
+                        />
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.but}
                         onPress={() => props.closeModal()}
                     >
-                        <Icon size={68} name="ios-close" color="red" />
+                        <Icon
+                          size={68}
+                          name="ios-close"
+                          color="red"
+                        />
                     </TouchableOpacity>
                 </View>
         </View>

@@ -13,6 +13,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
   },
+  main: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'black',
+  },
 });
 
 export default styles;

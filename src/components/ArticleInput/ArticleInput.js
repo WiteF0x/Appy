@@ -12,11 +12,11 @@ import { connect } from 'react-redux';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
-import styles from './style';
-
 import { createArticleAction } from '../../store/actions';
 
 import MyModal from '../CategorySelectModalArticle/CategorySelectModalArticle';
+
+import styles from './style';
 
 @connect(
   null,

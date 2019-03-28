@@ -12,7 +12,11 @@ import styles from './style';
 class MyModal extends Component {
   render() {
     return (
-        <Modal visible={this.props.Mvis} animationType="slide" transparent={false}>
+        <Modal
+          visible={this.props.Mvis}
+          animationType="slide"
+          transparent={false}
+        >
             <View style={styles.modalContainer}>
             <Text style={styles.text}>Please, select Parent category</Text>
                 <SelectList
@@ -24,6 +28,6 @@ class MyModal extends Component {
         </Modal>
     );
   }
-};
+}
 
 export default MyModal;

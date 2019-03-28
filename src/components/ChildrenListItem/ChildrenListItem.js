@@ -11,7 +11,13 @@ const ChildrenListItem = (props) => {
   const mymassiv = props.children;
   const Content = (
       <View style={styles.listItem}>
-        <TouchableOpacity onPress={() => { props.goToFull(props.childtitle, props.childid, { mymassiv }); }}>
+        <TouchableOpacity onPress={() => {
+          props.goToFull(
+            props.childtitle,
+            props.childid,
+            { mymassiv },
+          );
+        }}>
           <Text style={styles.title}>{props.childtitle}</Text>
           <Text style={styles.id}>{props.childid}</Text>
         </TouchableOpacity>

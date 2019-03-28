@@ -15,7 +15,13 @@ const CategorylistItem = (props) => {
     <View style={styles.listItem} >
       <View style={styles.openNext}>
         <Text style={styles.titletext}>Title:</Text>
-        <TouchableOpacity onPress={() => props.goToFull(props.categoryTitle, props.categoryId, { mymassiv })}>
+        <TouchableOpacity onPress={() => {
+          props.goToFull(
+            props.categoryTitle,
+            props.categoryId,
+            { mymassiv },
+          );
+        }}>
           <Icon
               name='ios-arrow-round-forward'
               color='grey'
@@ -31,7 +37,8 @@ const CategorylistItem = (props) => {
         <Icon name="ios-trash" color="red" size={30} />
       </TouchableOpacity>
     </View>
-  )
-; };
+  );
+
+};
 
 export default CategorylistItem;

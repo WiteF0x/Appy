@@ -100,7 +100,9 @@ class CategoryInput extends React.Component {
           </TouchableOpacity>
           <Text style={styles.category}>
             Parent category:
-              <Text style={styles.categoryColor}>{this.state.currentCategoryName}</Text>
+              <Text style={styles.categoryColor}>
+                {this.state.currentCategoryName}
+              </Text>
           </Text>
           <TouchableOpacity
             style={styles.myAddButton}

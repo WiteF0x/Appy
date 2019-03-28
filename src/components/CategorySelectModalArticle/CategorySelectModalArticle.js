@@ -12,7 +12,11 @@ import styles from './style';
 class MyModal extends Component {
   render() {
     return (
-        <Modal visible={this.props.Mvis} animationType="fade" transparent={true}>
+        <Modal
+          visible={this.props.Mvis}
+          animationType="fade"
+          transparent={true}
+        >
             <View style={styles.modalContainer}>
             <Text style={styles.text}>Please, select category you need</Text>
                 <SelectList
